@@ -1,4 +1,4 @@
 /vendor
 /.phpunit.result.cache
-
+/http-client.private.env.json
 /.idea

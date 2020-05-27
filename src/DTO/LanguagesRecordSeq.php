@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Baumeister\TecDocClient;
+namespace Baumeister\TecDocClient\DTO;
 
 
 class LanguagesRecordSeq

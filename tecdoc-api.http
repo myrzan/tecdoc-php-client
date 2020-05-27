@@ -1,0 +1,27 @@
+POST {{host}}/pegasus-3-0/services/TecdocToCatDLB.jsonEndpoint?api_key={{token}}
+Content-Type: application/json
+
+{
+  "getLanguages": {
+    "provider": {{provider}},
+    "lang": "de"
+  }
+}
+
+###
+
+POST {{host}}/pegasus-3-0/services/TecdocToCatDLB.jsonEndpoint?api_key={{token}}
+Content-Type: application/json
+
+{
+  "getArticles": {
+    "provider": {{provider}},
+    "dataSupplierIds": 4,
+    "lang": "de",
+    "articleCountry": "de",
+    "includeAll": true,
+    "searchType": 99,
+    "perPage": 100,
+    "page": 1
+  }
+}
