@@ -4,10 +4,14 @@
 namespace Baumeister\TecDocClient;
 
 
+use Baumeister\TecDocClient\Generated\GetArticles;
 use Baumeister\TecDocClient\Generated\GetArticlesResponse;
+use Baumeister\TecDocClient\Generated\GetLanguages;
 use Baumeister\TecDocClient\Generated\GetLanguagesResponse;
 use GuzzleHttp\Client as GuzzleClient;
 use JsonMapper;
+use ReflectionClass;
+use ReflectionProperty;
 use RuntimeException;
 
 class Client
@@ -16,43 +20,37 @@ class Client
 
     private $client;
     private $url;
-    private array $defaultParams;
     private int $providerId;
     private $jsonMapper;
 
-    public function __construct(string $apiKey, int $providerId, array $defaultParams)
+    public function __construct(string $apiKey, int $providerId)
     {
         $this->providerId = $providerId;
-        $this->defaultParams = $defaultParams;
         $this->client = new GuzzleClient();
         $this->url = self::TECDOC_JSON_ENDPOINT . $apiKey;
         $this->jsonMapper = new JsonMapper();
     }
 
-    public function getLanguages(string $lang = null) : GetLanguagesResponse
+    public function getLanguages(GetLanguages $paramsObject) : GetLanguagesResponse
     {
-        $params = [];
-        if (is_string($lang)) $params['lang'] = $lang;
-        $json = $this->call('getLanguages', $params);
+        $json = $this->call('getLanguages', $paramsObject);
         return $this->jsonMapper->map($json, new GetLanguagesResponse());
     }
 
-    public function getArticles(string $lang = null, string $articleCountry = null, array $dataSupplierIds = []) : GetArticlesResponse
+    public function getArticles(GetArticles $paramsObject) : GetArticlesResponse
     {
-        $params = ['dataSupplierIds' => $dataSupplierIds];
-        if (is_string($lang)) $params['lang'] = $lang;
-        if (is_string($articleCountry)) $params['articleCountry'] = $articleCountry;
-        $json = $this->call('getArticles', $params);
+        $json = $this->call('getArticles', $paramsObject);
         return $this->jsonMapper->map($json, new GetArticlesResponse());
     }
 
-    private function call(string $functionName, array $params)
+    private function call(string $functionName, $paramsObject)
     {
+        $paramsArray = self::paramsObjectToArray($paramsObject);
+        $paramsArray['provider'] = $this->providerId;
+        $jsonBody = [$functionName => $paramsArray];
         $response = $this->client->request('POST', $this->url, [
             'verify' => false,
-            'json' => [
-                $functionName => array_merge(['provider' => $this->providerId], $this->defaultParams, $params)
-            ]
+            'json' => $jsonBody
         ]);
         if ($response->getStatusCode() == 200) {
             $json = json_decode($response->getBody());
@@ -62,6 +60,24 @@ class Client
             }
             return $json;
         }
-        throw new RuntimeException('HTTP request failed.');
+        throw new RuntimeException("HTTP request failed with code {$response->getStatusCode()}");
+    }
+
+    private static function paramsObjectToArray($object) : array {
+        $reflectionClass = new ReflectionClass($object);
+        $array = [];
+        do {
+            $properties = $reflectionClass->getProperties();
+            foreach ($properties as $property) {
+                $property->setAccessible(true);
+                $value = $property->getValue($object);
+                if (is_object($value)) {
+                    $array[$property->getName()] = self::paramsObjectToArray($value);
+                } else {
+                    $array[$property->getName()] = $value;
+                }
+            }
+        } while ($reflectionClass = $reflectionClass->getParentClass());
+        return $array;
     }
 }
