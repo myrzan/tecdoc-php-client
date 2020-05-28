@@ -4,8 +4,8 @@
 namespace Baumeister\TecDocClient;
 
 
-use Baumeister\TecDocClient\DTO\GetArticlesResponse;
-use Baumeister\TecDocClient\DTO\GetLanguagesResponse;
+use Baumeister\TecDocClient\Generated\GetArticlesResponse;
+use Baumeister\TecDocClient\Generated\GetLanguagesResponse;
 use GuzzleHttp\Client as GuzzleClient;
 use JsonMapper;
 use RuntimeException;
@@ -55,7 +55,12 @@ class Client
             ]
         ]);
         if ($response->getStatusCode() == 200) {
-            return json_decode($response->getBody());
+            $json = json_decode($response->getBody());
+            if (isset($json->data->array)) {
+                $json->data = $json->data->array;
+                unset($json->data->array);
+            }
+            return $json;
         }
         throw new RuntimeException('HTTP request failed.');
     }

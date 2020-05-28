@@ -8,17 +8,22 @@
             "email": "stephan@baumeister.name"
         }
     ],
+    "scripts": {
+        "xsd2php": "xsd2php convert xsd2php-config.yml TecdocToCatDLB.xsd"
+    },
     "require": {
         "guzzlehttp/guzzle": "^6.5",
         "netresearch/jsonmapper": "^2.1",
         "ext-json": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.1"
+        "phpunit/phpunit": "^9.1",
+        "goetas-webservices/xsd2php": "^0.3.11"
     },
     "autoload": {
         "psr-4": {
-            "Baumeister\\TecDocClient\\": "src/"
+            "Baumeister\\TecDocClient\\": "src/",
+            "Baumeister\\TecDocClient\\Generated\\": "generated/"
         }
     },
     "autoload-dev": {

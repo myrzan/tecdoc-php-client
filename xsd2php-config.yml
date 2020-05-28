@@ -1,0 +1,9 @@
+xsd2php:
+  namespaces:
+    'http://server.cat.tecdoc.net': 'Baumeister\TecDocClient\Generated'
+  destinations_php:
+    'Baumeister\TecDocClient\Generated': 'generated'
+  destinations_jms:
+    'Baumeister\TecDocClient\Generated': 'generated/jms'
+  naming_strategy: short
+  path_generator: psr4

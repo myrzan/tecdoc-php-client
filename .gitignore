@@ -1,4 +1,6 @@
 /vendor
+/generated/*
+!/generated/.gitkeep
 /.phpunit.result.cache
 /http-client.private.env.json
 /.idea
