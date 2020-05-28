@@ -11,7 +11,6 @@ use Baumeister\TecDocClient\Generated\GetLanguagesResponse;
 use GuzzleHttp\Client as GuzzleClient;
 use JsonMapper;
 use ReflectionClass;
-use ReflectionProperty;
 use RuntimeException;
 
 class Client
