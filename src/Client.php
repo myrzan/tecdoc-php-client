@@ -19,6 +19,7 @@ use Baumeister\TecDocClient\Generated\GetVehicleByIds3Response;
 use GuzzleHttp\Client as GuzzleClient;
 use JsonMapper;
 use ReflectionClass;
+use ReflectionObject;
 use RuntimeException;
 use stdClass;
 
@@ -79,7 +80,7 @@ class Client
 
     private function call(string $functionName, $paramsObject)
     {
-        $paramsArray = self::paramsObjectToArray($paramsObject);
+        $paramsArray = self::recursivelyTransformObjectToArray($paramsObject);
         $paramsArray['provider'] = $this->providerId;
         $jsonBody = [$functionName => $paramsArray];
         $response = $this->client->request('POST', $this->url, [
@@ -112,36 +113,36 @@ class Client
         $reflectionClass = new ReflectionClass($paramsObject);
         $reflectionProperty = $reflectionClass->getParentClass()->getProperty($propName);
         $reflectionProperty->setAccessible(true);
-        $reflectionProperty->setValue($paramsObject, ['array' => $reflectionProperty->getValue($paramsObject)]);
+        $propValue = new stdClass();
+        $propValue->array = $reflectionProperty->getValue($paramsObject);
+        $reflectionProperty->setValue($paramsObject, $propValue);
     }
 
-    private static function paramsObjectToArray($object): array
+    private static function recursivelyTransformObjectToArray($object)
     {
-        $reflectionClass = new ReflectionClass($object);
-        $result = [];
-        do {
-            $properties = $reflectionClass->getProperties();
-            foreach ($properties as $property) {
-                $property->setAccessible(true);
-                $propName = $property->getName();
-                $value = $property->getValue($object);
-                if (is_object($value)) {
-                    $result[$propName] = self::paramsObjectToArray($value);
-                } else if (is_array($value)) {
-                    $result[$propName] = [];
-                    foreach ($value as $item) {
-                        if (is_object($item)) {
-                            $result[$propName][] = self::paramsObjectToArray($item);
-                        } else {
-                            $result[$propName][] = $item;
-                        }
-                    }
-
-                } else {
-                    $result[$propName] = $value;
-                }
+        if (is_array($object)) {
+            $result = [];
+            foreach ($object as $k => $v) {
+                $result[$k] = self::recursivelyTransformObjectToArray($v);
             }
-        } while ($reflectionClass = $reflectionClass->getParentClass());
-        return $result;
+            return $result;
+        } else if (is_object($object)) {
+            $result = [];
+            try {
+                $reflection = $object instanceof stdClass ? new ReflectionObject($object) : new ReflectionClass($object);
+                do {
+                    $properties = $reflection->getProperties();
+                    foreach ($properties as $property) {
+                        $property->setAccessible(true);
+                        $propName = $property->getName();
+                        $result[$propName] = self::recursivelyTransformObjectToArray($property->getValue($object));
+                    }
+                } while ($reflection = $reflection->getParentClass());
+            } catch (\ReflectionException $e) {
+                print_r($e);
+            }
+            return $result;
+        }
+        return $object;
     }
 }
