@@ -4,6 +4,8 @@ A [TecDoc Webservice API](http://webservice.tecalliance.services) client written
 The DTO classes are generated with [xsd2php](https://github.com/goetas-webservices/xsd2php) using the 
 [TecDoc SOAP XSD](http://webservice.tecalliance.services/pegasus-3-0/services/TecdocToCatDLB.soapEndpoint?xsd) as input.
 
+This project is licensed under the terms of the GNU Lesser General Public License v3.0.
+
 ## Install
 ```shell script
 composer require sbaumeister/tecdoc-client-php
