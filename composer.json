@@ -1,6 +1,6 @@
 {
-    "name": "baumeister/tecdoc-client-php",
-    "description": "",
+    "name": "sbaumeister/tecdoc-client-php",
+    "description": "A TecDoc Webservice API client",
     "type": "library",
     "authors": [
         {
@@ -12,9 +12,10 @@
         "xsd2php": "xsd2php convert xsd2php-config.yml TecdocToCatDLB.xsd"
     },
     "require": {
+        "php": "^7.3",
+        "ext-json": "*",
         "guzzlehttp/guzzle": "^6.5",
-        "netresearch/jsonmapper": "^2.1",
-        "ext-json": "*"
+        "netresearch/jsonmapper": "^2.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.1",
