@@ -1,5 +1,5 @@
 # TecDoc Client PHP
-A [TecDoc Webservice API]((http://webservice.tecalliance.services)) client written in PHP.
+A [TecDoc Webservice API](http://webservice.tecalliance.services) client written in PHP.
 
 The DTO classes are generated with [xsd2php](https://github.com/goetas-webservices/xsd2php) using the 
 [TecDoc SOAP XSD](http://webservice.tecalliance.services/pegasus-3-0/services/TecdocToCatDLB.soapEndpoint?xsd) as input.
