@@ -75,6 +75,10 @@ class Client
     public function getArticleLinkedAllLinkingTarget4(GetArticleLinkedAllLinkingTarget4 $paramsObject): GetArticleLinkedAllLinkingTarget4Response
     {
         $json = $this->call('getArticleLinkedAllLinkingTarget4', $paramsObject);
+        // Handle empty API result with invalid property value
+        if (sizeof($json->data) == 1 and is_string($json->data[0]->articleLinkages)) {
+            $json->data = [];
+        }
         return $this->jsonMapper->map($json, new GetArticleLinkedAllLinkingTarget4Response());
     }
 

@@ -31,6 +31,7 @@ class ClientTest extends TestCase
         $response = $this->tecDocClient->getLanguages($params);
 
         print_r($response);
+        $this->assertEquals(200, $response->getStatus());
     }
 
     public function testGetAmBrands()
@@ -42,6 +43,7 @@ class ClientTest extends TestCase
         $response = $this->tecDocClient->getAmBrands($params);
 
         print_r($response);
+        $this->assertEquals(200, $response->getStatus());
     }
 
     public function testGetArticles()
@@ -49,11 +51,14 @@ class ClientTest extends TestCase
         $params = (new GetArticles())
             ->setLang('de')
             ->setArticleCountry('de')
-            ->setDataSupplierIds([4]);
+            ->setDataSupplierIds([4])
+            ->setPerPage(10)
+            ->setPage(1);
 
         $response = $this->tecDocClient->getArticles($params);
 
         print_r($response);
+        $this->assertEquals(200, $response->getStatus());
     }
 
     public function testGetArticleLinkedAllLinkingTargetsByIds3()
@@ -80,6 +85,7 @@ class ClientTest extends TestCase
         $response = $this->tecDocClient->getArticleLinkedAllLinkingTargetsByIds3($params);
 
         print_r($response);
+        $this->assertEquals(200, $response->getStatus());
     }
 
     public function testGetArticleLinkedAllLinkingTarget4()
@@ -94,6 +100,22 @@ class ClientTest extends TestCase
         $response = $this->tecDocClient->getArticleLinkedAllLinkingTarget4($params);
 
         print_r($response);
+        $this->assertEquals(200, $response->getStatus());
+    }
+
+    public function testGetArticleLinkedAllLinkingTarget4_HandleEmptyResult()
+    {
+        $params = (new GetArticleLinkedAllLinkingTarget4())
+            ->setLang('de')
+            ->setCountry('de')
+            ->setArticleCountry('de')
+            ->setArticleId(4513536)
+            ->setLinkingTargetType('P');
+
+        $response = $this->tecDocClient->getArticleLinkedAllLinkingTarget4($params);
+
+        print_r($response);
+        $this->assertEquals(200, $response->getStatus());
     }
 
     public function testGetVehicleByIds3()
@@ -116,5 +138,6 @@ class ClientTest extends TestCase
         $response = $this->tecDocClient->getVehicleByIds3($params);
 
         print_r($response);
+        $this->assertEquals(200, $response->getStatus());
     }
 }
