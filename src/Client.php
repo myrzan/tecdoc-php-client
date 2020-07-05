@@ -29,7 +29,7 @@ class Client
 
     private $client;
     private $url;
-    private int $providerId;
+    private $providerId;
     private $jsonMapper;
 
     public function __construct(string $apiKey, int $providerId)
