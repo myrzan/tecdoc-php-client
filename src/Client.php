@@ -43,33 +43,33 @@ class Client
     public function getLanguages(GetLanguages $paramsObject): GetLanguagesResponse
     {
         $json = $this->call('getLanguages', $paramsObject);
-        return $this->jsonMapper->map($json, new GetLanguagesResponse());
+        return $this->mapJsonToObject($json, new GetLanguagesResponse());
     }
 
     public function getAmBrands(GetAmBrands $paramsObject): GetAmBrandsResponse
     {
         $json = $this->call('getAmBrands', $paramsObject);
-        return $this->jsonMapper->map($json, new GetAmBrandsResponse());
+        return $this->mapJsonToObject($json, new GetAmBrandsResponse());
     }
 
     public function getArticles(GetArticles $paramsObject): GetArticlesResponse
     {
         $json = $this->call('getArticles', $paramsObject);
-        return $this->jsonMapper->map($json, new GetArticlesResponse());
+        return $this->mapJsonToObject($json, new GetArticlesResponse());
     }
 
     public function getVehicleByIds3(GetVehicleByIds3 $paramsObject): GetVehicleByIds3Response
     {
         Client::addIntermediatePropNamedArray($paramsObject, 'carIds');
         $json = $this->call('getVehicleByIds3', $paramsObject);
-        return $this->jsonMapper->map($json, new GetVehicleByIds3Response());
+        return $this->mapJsonToObject($json, new GetVehicleByIds3Response());
     }
 
     public function getArticleLinkedAllLinkingTargetsByIds3(GetArticleLinkedAllLinkingTargetsByIds3 $paramsObject): GetArticleLinkedAllLinkingTargetsByIds3Response
     {
         Client::addIntermediatePropNamedArray($paramsObject, 'linkedArticlePairs');
         $json = $this->call('getArticleLinkedAllLinkingTargetsByIds3', $paramsObject);
-        return $this->jsonMapper->map($json, new GetArticleLinkedAllLinkingTargetsByIds3Response());
+        return $this->mapJsonToObject($json, new GetArticleLinkedAllLinkingTargetsByIds3Response());
     }
 
     public function getArticleLinkedAllLinkingTarget4(GetArticleLinkedAllLinkingTarget4 $paramsObject): GetArticleLinkedAllLinkingTarget4Response
@@ -79,7 +79,7 @@ class Client
         if (sizeof($json->data) == 1 and is_string($json->data[0]->articleLinkages)) {
             $json->data = [];
         }
-        return $this->jsonMapper->map($json, new GetArticleLinkedAllLinkingTarget4Response());
+        return $this->mapJsonToObject($json, new GetArticleLinkedAllLinkingTarget4Response());
     }
 
     private function call(string $functionName, $paramsObject)
@@ -148,5 +148,40 @@ class Client
             return $result;
         }
         return $object;
+    }
+
+    private function mapJsonToObject($json, $object)
+    {
+        try {
+            return $this->jsonMapper->map($json, $object);
+        } catch (\JsonMapper_Exception $e) {
+            // Replace empty string with empty array and try again
+            if (preg_match('/JSON property "(.+)" must be an array, string given/', $e->getMessage(), $matches)) {
+                $propName = $matches[1];
+                $this->findNestedPropAndSetValue($json, $propName, '', []);
+                return $this->mapJsonToObject($json, $object);
+            }
+            throw $e;
+        }
+    }
+
+    private function findNestedPropAndSetValue($obj, string $propName, $propValue, $newValue)
+    {
+        if (!is_object($obj)) {
+            return;
+        }
+        foreach ($obj as $p => $v) {
+            if ($p === $propName and $v === $propValue) {
+                $obj->$p = $newValue;
+            }
+            if (is_object($v)) {
+                $this->findNestedPropAndSetValue($v, $propName, $propValue, $newValue);
+            }
+            if (is_array($v)) {
+                foreach ($v as $k => $v1) {
+                    $this->findNestedPropAndSetValue($v1, $propName, $propValue, $newValue);
+                }
+            }
+        }
     }
 }

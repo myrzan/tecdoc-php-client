@@ -140,4 +140,28 @@ class ClientTest extends TestCase
         print_r($response);
         $this->assertEquals(200, $response->getStatus());
     }
+
+
+    public function testGetVehicleByIds3_handleResponseWithEmptyStringsInPlaceOfArrays()
+    {
+        $params = (new GetVehicleByIds3())
+            ->setLang('de')
+            ->setArticleCountry('de')
+            ->setCountriesCarSelection('de')
+            ->setCountry('de')
+            ->setAxles(true)
+            ->setCabs(true)
+            ->setKbaData(true)
+            ->setMotorCodes(true)
+            ->setProtoTypes(true)
+            ->setRegistrationInfo(true)
+            ->setSecondaryTypes(true)
+            ->setWheelbases(true)
+            ->setCarIds([102028, 105077]);
+
+        $response = $this->tecDocClient->getVehicleByIds3($params);
+
+        print_r($response);
+        $this->assertEquals(200, $response->getStatus());
+    }
 }
