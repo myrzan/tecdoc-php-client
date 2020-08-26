@@ -4,6 +4,7 @@ namespace Myrzan\TecDocClient;
 use Myrzan\TecDocClient\Generated\GetAmBrands;
 use Myrzan\TecDocClient\Generated\GetAmBrandsResponse;
 use Myrzan\TecDocClient\Generated\GetArticleDirectSearchAllNumbersWithState;
+use Myrzan\TecDocClient\Generated\GetArticleDirectSearchAllNumbersWithStateResponse;
 use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTarget4;
 use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTarget4Response;
 use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTargetsByIds3;
@@ -94,11 +95,11 @@ class Client
         return $this->mapJsonToObject($json, new GetArticleLinkedAllLinkingTarget4Response());
     }
 
-    public function getArticleDirectSearchAllNumbersWithState(GetArticleDirectSearchAllNumbersWithState $paramsObject): GetArticleDirectSearchAllNumbersWithState
+    public function getArticleDirectSearchAllNumbersWithState(GetArticleDirectSearchAllNumbersWithState $paramsObject): GetArticleDirectSearchAllNumbersWithStateResponse
     {
         $json = $this->call('getArticleDirectSearchAllNumbersWithState', $paramsObject);
 
-        return $this->mapJsonToObject($json, new GetArticleDirectSearchAllNumbersWithState());
+        return $this->mapJsonToObject($json, new GetArticleDirectSearchAllNumbersWithStateResponse());
     }
 
     private function call(string $functionName, $paramsObject)
