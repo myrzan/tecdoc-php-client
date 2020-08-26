@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleLinkedAllLinkingTargetManufacturer2ResponseType
@@ -12,7 +12,7 @@ class ArticleLinkedAllLinkingTargetManufacturer2ResponseType extends ArticleLink
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturer2RecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturer2RecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class ArticleLinkedAllLinkingTargetManufacturer2ResponseType extends ArticleLink
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturer2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturer2RecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturer2RecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturer2RecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class ArticleLinkedAllLinkingTargetManufacturer2ResponseType extends ArticleLink
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturer2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturer2RecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class ArticleLinkedAllLinkingTargetManufacturer2ResponseType extends ArticleLink
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturer2RecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturer2RecordType[] $data
      * @return self
      */
     public function setData(array $data)

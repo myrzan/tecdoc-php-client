@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing CountryGroupsResponseType
@@ -12,7 +12,7 @@ class CountryGroupsResponseType extends CountryGroupsResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CountryGroupsRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\CountryGroupsRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class CountryGroupsResponseType extends CountryGroupsResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CountryGroupsRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\CountryGroupsRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\CountryGroupsRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\CountryGroupsRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class CountryGroupsResponseType extends CountryGroupsResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\CountryGroupsRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\CountryGroupsRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class CountryGroupsResponseType extends CountryGroupsResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\CountryGroupsRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\CountryGroupsRecordType[] $data
      * @return self
      */
     public function setData(array $data)

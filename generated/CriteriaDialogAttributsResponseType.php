@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing CriteriaDialogAttributsResponseType
@@ -12,7 +12,7 @@ class CriteriaDialogAttributsResponseType extends CriteriaDialogAttributsRespons
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CriteriaDialogAttributsRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\CriteriaDialogAttributsRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class CriteriaDialogAttributsResponseType extends CriteriaDialogAttributsRespons
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CriteriaDialogAttributsRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\CriteriaDialogAttributsRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\CriteriaDialogAttributsRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\CriteriaDialogAttributsRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class CriteriaDialogAttributsResponseType extends CriteriaDialogAttributsRespons
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\CriteriaDialogAttributsRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\CriteriaDialogAttributsRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class CriteriaDialogAttributsResponseType extends CriteriaDialogAttributsRespons
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\CriteriaDialogAttributsRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\CriteriaDialogAttributsRecordType[] $data
      * @return self
      */
     public function setData(array $data)

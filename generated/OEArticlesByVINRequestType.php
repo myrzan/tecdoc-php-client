@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing OEArticlesByVINRequestType
@@ -75,7 +75,7 @@ class OEArticlesByVINRequestType extends OEArticlesByVINRequestSrcType
     private $page = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\SortType[] $sort
+     * @var \Myrzan\TecDocClient\Generated\SortType[] $sort
      */
     private $sort = [
         
@@ -105,7 +105,7 @@ class OEArticlesByVINRequestType extends OEArticlesByVINRequestSrcType
     /**
      * Options for returning assembly group facets. Defaults to false.
      *
-     * @var \Baumeister\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions
+     * @var \Myrzan\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions
      */
     private $assemblyGroupFacetOptions = null;
 
@@ -455,9 +455,9 @@ class OEArticlesByVINRequestType extends OEArticlesByVINRequestSrcType
      * Adds as sort
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\SortType $sort
+     * @param \Myrzan\TecDocClient\Generated\SortType $sort
      */
-    public function addToSort(\Baumeister\TecDocClient\Generated\SortType $sort)
+    public function addToSort(\Myrzan\TecDocClient\Generated\SortType $sort)
     {
         $this->sort[] = $sort;
         return $this;
@@ -488,7 +488,7 @@ class OEArticlesByVINRequestType extends OEArticlesByVINRequestSrcType
     /**
      * Gets as sort
      *
-     * @return \Baumeister\TecDocClient\Generated\SortType[]
+     * @return \Myrzan\TecDocClient\Generated\SortType[]
      */
     public function getSort()
     {
@@ -498,7 +498,7 @@ class OEArticlesByVINRequestType extends OEArticlesByVINRequestSrcType
     /**
      * Sets a new sort
      *
-     * @param \Baumeister\TecDocClient\Generated\SortType[] $sort
+     * @param \Myrzan\TecDocClient\Generated\SortType[] $sort
      * @return self
      */
     public function setSort(array $sort)
@@ -590,7 +590,7 @@ class OEArticlesByVINRequestType extends OEArticlesByVINRequestSrcType
      *
      * Options for returning assembly group facets. Defaults to false.
      *
-     * @return \Baumeister\TecDocClient\Generated\AssemblyGroupFacetOptionsType
+     * @return \Myrzan\TecDocClient\Generated\AssemblyGroupFacetOptionsType
      */
     public function getAssemblyGroupFacetOptions()
     {
@@ -602,10 +602,10 @@ class OEArticlesByVINRequestType extends OEArticlesByVINRequestSrcType
      *
      * Options for returning assembly group facets. Defaults to false.
      *
-     * @param \Baumeister\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions
+     * @param \Myrzan\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions
      * @return self
      */
-    public function setAssemblyGroupFacetOptions(\Baumeister\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions)
+    public function setAssemblyGroupFacetOptions(\Myrzan\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions)
     {
         $this->assemblyGroupFacetOptions = $assemblyGroupFacetOptions;
         return $this;

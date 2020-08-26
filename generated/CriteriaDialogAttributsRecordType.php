@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing CriteriaDialogAttributsRecordType
@@ -12,17 +12,17 @@ class CriteriaDialogAttributsRecordType extends CriteriaDialogAttributsRecordSrc
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleLinkPairType[] $articleLinkIds
+     * @var \Myrzan\TecDocClient\Generated\ArticleLinkPairType[] $articleLinkIds
      */
     private $articleLinkIds = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AttributeValueType[] $attributeValues
+     * @var \Myrzan\TecDocClient\Generated\AttributeValueType[] $attributeValues
      */
     private $attributeValues = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AttributeType[] $attributes
+     * @var \Myrzan\TecDocClient\Generated\AttributeType[] $attributes
      */
     private $attributes = null;
 
@@ -30,9 +30,9 @@ class CriteriaDialogAttributsRecordType extends CriteriaDialogAttributsRecordSrc
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkPairType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkPairType $array
      */
-    public function addToArticleLinkIds(\Baumeister\TecDocClient\Generated\ArticleLinkPairType $array)
+    public function addToArticleLinkIds(\Myrzan\TecDocClient\Generated\ArticleLinkPairType $array)
     {
         $this->articleLinkIds[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class CriteriaDialogAttributsRecordType extends CriteriaDialogAttributsRecordSrc
     /**
      * Gets as articleLinkIds
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleLinkPairType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleLinkPairType[]
      */
     public function getArticleLinkIds()
     {
@@ -73,7 +73,7 @@ class CriteriaDialogAttributsRecordType extends CriteriaDialogAttributsRecordSrc
     /**
      * Sets a new articleLinkIds
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkPairType[] $articleLinkIds
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkPairType[] $articleLinkIds
      * @return self
      */
     public function setArticleLinkIds(array $articleLinkIds)
@@ -86,9 +86,9 @@ class CriteriaDialogAttributsRecordType extends CriteriaDialogAttributsRecordSrc
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AttributeValueType $array
+     * @param \Myrzan\TecDocClient\Generated\AttributeValueType $array
      */
-    public function addToAttributeValues(\Baumeister\TecDocClient\Generated\AttributeValueType $array)
+    public function addToAttributeValues(\Myrzan\TecDocClient\Generated\AttributeValueType $array)
     {
         $this->attributeValues[] = $array;
         return $this;
@@ -119,7 +119,7 @@ class CriteriaDialogAttributsRecordType extends CriteriaDialogAttributsRecordSrc
     /**
      * Gets as attributeValues
      *
-     * @return \Baumeister\TecDocClient\Generated\AttributeValueType[]
+     * @return \Myrzan\TecDocClient\Generated\AttributeValueType[]
      */
     public function getAttributeValues()
     {
@@ -129,7 +129,7 @@ class CriteriaDialogAttributsRecordType extends CriteriaDialogAttributsRecordSrc
     /**
      * Sets a new attributeValues
      *
-     * @param \Baumeister\TecDocClient\Generated\AttributeValueType[] $attributeValues
+     * @param \Myrzan\TecDocClient\Generated\AttributeValueType[] $attributeValues
      * @return self
      */
     public function setAttributeValues(array $attributeValues)
@@ -142,9 +142,9 @@ class CriteriaDialogAttributsRecordType extends CriteriaDialogAttributsRecordSrc
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AttributeType $array
+     * @param \Myrzan\TecDocClient\Generated\AttributeType $array
      */
-    public function addToAttributes(\Baumeister\TecDocClient\Generated\AttributeType $array)
+    public function addToAttributes(\Myrzan\TecDocClient\Generated\AttributeType $array)
     {
         $this->attributes[] = $array;
         return $this;
@@ -175,7 +175,7 @@ class CriteriaDialogAttributsRecordType extends CriteriaDialogAttributsRecordSrc
     /**
      * Gets as attributes
      *
-     * @return \Baumeister\TecDocClient\Generated\AttributeType[]
+     * @return \Myrzan\TecDocClient\Generated\AttributeType[]
      */
     public function getAttributes()
     {
@@ -185,7 +185,7 @@ class CriteriaDialogAttributsRecordType extends CriteriaDialogAttributsRecordSrc
     /**
      * Sets a new attributes
      *
-     * @param \Baumeister\TecDocClient\Generated\AttributeType[] $attributes
+     * @param \Myrzan\TecDocClient\Generated\AttributeType[] $attributes
      * @return self
      */
     public function setAttributes(array $attributes)

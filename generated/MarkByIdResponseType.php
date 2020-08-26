@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing MarkByIdResponseType
@@ -12,7 +12,7 @@ class MarkByIdResponseType extends MarkByIdResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MarkByIdRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\MarkByIdRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class MarkByIdResponseType extends MarkByIdResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\MarkByIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\MarkByIdRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\MarkByIdRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\MarkByIdRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class MarkByIdResponseType extends MarkByIdResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\MarkByIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\MarkByIdRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class MarkByIdResponseType extends MarkByIdResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\MarkByIdRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\MarkByIdRecordType[] $data
      * @return self
      */
     public function setData(array $data)

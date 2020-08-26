@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticlesResponseType
@@ -26,24 +26,24 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     private $maxAllowedPage = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleRecordType[] $articles
+     * @var \Myrzan\TecDocClient\Generated\ArticleRecordType[] $articles
      */
     private $articles = [
         
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\DataSupplierFacetCountsType $dataSupplierFacets
+     * @var \Myrzan\TecDocClient\Generated\DataSupplierFacetCountsType $dataSupplierFacets
      */
     private $dataSupplierFacets = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets
+     * @var \Myrzan\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets
      */
     private $genericArticleFacets = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CriteriaFacetCountsType $criteriaFacets
+     * @var \Myrzan\TecDocClient\Generated\CriteriaFacetCountsType $criteriaFacets
      */
     private $criteriaFacets = null;
 
@@ -58,7 +58,7 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     private $statusText = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets
+     * @var \Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets
      */
     private $assemblyGroupFacets = null;
 
@@ -118,9 +118,9 @@ class ArticlesResponseType extends ArticlesResponseSrcType
      * Adds as articles
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleRecordType $articles
+     * @param \Myrzan\TecDocClient\Generated\ArticleRecordType $articles
      */
-    public function addToArticles(\Baumeister\TecDocClient\Generated\ArticleRecordType $articles)
+    public function addToArticles(\Myrzan\TecDocClient\Generated\ArticleRecordType $articles)
     {
         $this->articles[] = $articles;
         return $this;
@@ -151,7 +151,7 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     /**
      * Gets as articles
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleRecordType[]
      */
     public function getArticles()
     {
@@ -161,7 +161,7 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     /**
      * Sets a new articles
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleRecordType[] $articles
+     * @param \Myrzan\TecDocClient\Generated\ArticleRecordType[] $articles
      * @return self
      */
     public function setArticles(array $articles)
@@ -173,7 +173,7 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     /**
      * Gets as dataSupplierFacets
      *
-     * @return \Baumeister\TecDocClient\Generated\DataSupplierFacetCountsType
+     * @return \Myrzan\TecDocClient\Generated\DataSupplierFacetCountsType
      */
     public function getDataSupplierFacets()
     {
@@ -183,10 +183,10 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     /**
      * Sets a new dataSupplierFacets
      *
-     * @param \Baumeister\TecDocClient\Generated\DataSupplierFacetCountsType $dataSupplierFacets
+     * @param \Myrzan\TecDocClient\Generated\DataSupplierFacetCountsType $dataSupplierFacets
      * @return self
      */
-    public function setDataSupplierFacets(\Baumeister\TecDocClient\Generated\DataSupplierFacetCountsType $dataSupplierFacets)
+    public function setDataSupplierFacets(\Myrzan\TecDocClient\Generated\DataSupplierFacetCountsType $dataSupplierFacets)
     {
         $this->dataSupplierFacets = $dataSupplierFacets;
         return $this;
@@ -195,7 +195,7 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     /**
      * Gets as genericArticleFacets
      *
-     * @return \Baumeister\TecDocClient\Generated\GenericArticleFacetCountsType
+     * @return \Myrzan\TecDocClient\Generated\GenericArticleFacetCountsType
      */
     public function getGenericArticleFacets()
     {
@@ -205,10 +205,10 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     /**
      * Sets a new genericArticleFacets
      *
-     * @param \Baumeister\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets
+     * @param \Myrzan\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets
      * @return self
      */
-    public function setGenericArticleFacets(\Baumeister\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets)
+    public function setGenericArticleFacets(\Myrzan\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets)
     {
         $this->genericArticleFacets = $genericArticleFacets;
         return $this;
@@ -217,7 +217,7 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     /**
      * Gets as criteriaFacets
      *
-     * @return \Baumeister\TecDocClient\Generated\CriteriaFacetCountsType
+     * @return \Myrzan\TecDocClient\Generated\CriteriaFacetCountsType
      */
     public function getCriteriaFacets()
     {
@@ -227,10 +227,10 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     /**
      * Sets a new criteriaFacets
      *
-     * @param \Baumeister\TecDocClient\Generated\CriteriaFacetCountsType $criteriaFacets
+     * @param \Myrzan\TecDocClient\Generated\CriteriaFacetCountsType $criteriaFacets
      * @return self
      */
-    public function setCriteriaFacets(\Baumeister\TecDocClient\Generated\CriteriaFacetCountsType $criteriaFacets)
+    public function setCriteriaFacets(\Myrzan\TecDocClient\Generated\CriteriaFacetCountsType $criteriaFacets)
     {
         $this->criteriaFacets = $criteriaFacets;
         return $this;
@@ -283,7 +283,7 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     /**
      * Gets as assemblyGroupFacets
      *
-     * @return \Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountsType
+     * @return \Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountsType
      */
     public function getAssemblyGroupFacets()
     {
@@ -293,10 +293,10 @@ class ArticlesResponseType extends ArticlesResponseSrcType
     /**
      * Sets a new assemblyGroupFacets
      *
-     * @param \Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets
+     * @param \Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets
      * @return self
      */
-    public function setAssemblyGroupFacets(\Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets)
+    public function setAssemblyGroupFacets(\Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets)
     {
         $this->assemblyGroupFacets = $assemblyGroupFacets;
         return $this;

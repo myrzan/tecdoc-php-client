@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ChildNodesPatternResponseType
@@ -12,7 +12,7 @@ class ChildNodesPatternResponseType extends ChildNodesPatternResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ChildNodesPatternRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\ChildNodesPatternRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class ChildNodesPatternResponseType extends ChildNodesPatternResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ChildNodesPatternRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ChildNodesPatternRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\ChildNodesPatternRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\ChildNodesPatternRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class ChildNodesPatternResponseType extends ChildNodesPatternResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\ChildNodesPatternRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ChildNodesPatternRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class ChildNodesPatternResponseType extends ChildNodesPatternResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\ChildNodesPatternRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\ChildNodesPatternRecordType[] $data
      * @return self
      */
     public function setData(array $data)

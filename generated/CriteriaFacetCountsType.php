@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing CriteriaFacetCountsType
@@ -19,7 +19,7 @@ class CriteriaFacetCountsType
     private $total = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CriteriaFacetCountType[] $counts
+     * @var \Myrzan\TecDocClient\Generated\CriteriaFacetCountType[] $counts
      */
     private $counts = [
         
@@ -55,9 +55,9 @@ class CriteriaFacetCountsType
      * Adds as counts
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CriteriaFacetCountType $counts
+     * @param \Myrzan\TecDocClient\Generated\CriteriaFacetCountType $counts
      */
-    public function addToCounts(\Baumeister\TecDocClient\Generated\CriteriaFacetCountType $counts)
+    public function addToCounts(\Myrzan\TecDocClient\Generated\CriteriaFacetCountType $counts)
     {
         $this->counts[] = $counts;
         return $this;
@@ -88,7 +88,7 @@ class CriteriaFacetCountsType
     /**
      * Gets as counts
      *
-     * @return \Baumeister\TecDocClient\Generated\CriteriaFacetCountType[]
+     * @return \Myrzan\TecDocClient\Generated\CriteriaFacetCountType[]
      */
     public function getCounts()
     {
@@ -98,7 +98,7 @@ class CriteriaFacetCountsType
     /**
      * Sets a new counts
      *
-     * @param \Baumeister\TecDocClient\Generated\CriteriaFacetCountType[] $counts
+     * @param \Myrzan\TecDocClient\Generated\CriteriaFacetCountType[] $counts
      * @return self
      */
     public function setCounts(array $counts)

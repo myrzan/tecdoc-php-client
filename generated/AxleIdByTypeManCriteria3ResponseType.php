@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing AxleIdByTypeManCriteria3ResponseType
@@ -12,7 +12,7 @@ class AxleIdByTypeManCriteria3ResponseType extends AxleIdByTypeManCriteria3Respo
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AxleIdByTypeManCriteria3RecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\AxleIdByTypeManCriteria3RecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class AxleIdByTypeManCriteria3ResponseType extends AxleIdByTypeManCriteria3Respo
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AxleIdByTypeManCriteria3RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\AxleIdByTypeManCriteria3RecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\AxleIdByTypeManCriteria3RecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\AxleIdByTypeManCriteria3RecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class AxleIdByTypeManCriteria3ResponseType extends AxleIdByTypeManCriteria3Respo
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\AxleIdByTypeManCriteria3RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\AxleIdByTypeManCriteria3RecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class AxleIdByTypeManCriteria3ResponseType extends AxleIdByTypeManCriteria3Respo
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\AxleIdByTypeManCriteria3RecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\AxleIdByTypeManCriteria3RecordType[] $data
      * @return self
      */
     public function setData(array $data)

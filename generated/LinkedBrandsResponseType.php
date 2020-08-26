@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing LinkedBrandsResponseType
@@ -12,7 +12,7 @@ class LinkedBrandsResponseType extends LinkedBrandsResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\LinkedBrandsRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\LinkedBrandsRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class LinkedBrandsResponseType extends LinkedBrandsResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\LinkedBrandsRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\LinkedBrandsRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\LinkedBrandsRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\LinkedBrandsRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class LinkedBrandsResponseType extends LinkedBrandsResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\LinkedBrandsRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\LinkedBrandsRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class LinkedBrandsResponseType extends LinkedBrandsResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\LinkedBrandsRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\LinkedBrandsRecordType[] $data
      * @return self
      */
     public function setData(array $data)

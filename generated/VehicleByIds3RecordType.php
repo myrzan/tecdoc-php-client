@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing VehicleByIds3RecordType
@@ -12,12 +12,12 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AxleByCarIdRecordType[] $axles
+     * @var \Myrzan\TecDocClient\Generated\AxleByCarIdRecordType[] $axles
      */
     private $axles = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CabsByCarIdRecordType[] $cabs
+     * @var \Myrzan\TecDocClient\Generated\CabsByCarIdRecordType[] $cabs
      */
     private $cabs = null;
 
@@ -27,37 +27,37 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     private $carId = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\KbaNumbersByVehicleIdRecordType[] $kbaNumbers
+     * @var \Myrzan\TecDocClient\Generated\KbaNumbersByVehicleIdRecordType[] $kbaNumbers
      */
     private $kbaNumbers = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MotorCodesByCarIdRecordType[] $motorCodes
+     * @var \Myrzan\TecDocClient\Generated\MotorCodesByCarIdRecordType[] $motorCodes
      */
     private $motorCodes = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\VehiclePrototypeRecordType[] $protoTypes
+     * @var \Myrzan\TecDocClient\Generated\VehiclePrototypeRecordType[] $protoTypes
      */
     private $protoTypes = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\SecondaryTypesByCarIdRecordType[] $secondaryTypes
+     * @var \Myrzan\TecDocClient\Generated\SecondaryTypesByCarIdRecordType[] $secondaryTypes
      */
     private $secondaryTypes = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\VehicleByIdRecordType $vehicleDetails
+     * @var \Myrzan\TecDocClient\Generated\VehicleByIdRecordType $vehicleDetails
      */
     private $vehicleDetails = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\VehicleRegistrationInfoByIdRecordType $vehicleRegistrationInfo
+     * @var \Myrzan\TecDocClient\Generated\VehicleRegistrationInfoByIdRecordType $vehicleRegistrationInfo
      */
     private $vehicleRegistrationInfo = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\WheelBasesByCarIdRecordType[] $wheelBases
+     * @var \Myrzan\TecDocClient\Generated\WheelBasesByCarIdRecordType[] $wheelBases
      */
     private $wheelBases = null;
 
@@ -65,9 +65,9 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AxleByCarIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\AxleByCarIdRecordType $array
      */
-    public function addToAxles(\Baumeister\TecDocClient\Generated\AxleByCarIdRecordType $array)
+    public function addToAxles(\Myrzan\TecDocClient\Generated\AxleByCarIdRecordType $array)
     {
         $this->axles[] = $array;
         return $this;
@@ -98,7 +98,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Gets as axles
      *
-     * @return \Baumeister\TecDocClient\Generated\AxleByCarIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\AxleByCarIdRecordType[]
      */
     public function getAxles()
     {
@@ -108,7 +108,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Sets a new axles
      *
-     * @param \Baumeister\TecDocClient\Generated\AxleByCarIdRecordType[] $axles
+     * @param \Myrzan\TecDocClient\Generated\AxleByCarIdRecordType[] $axles
      * @return self
      */
     public function setAxles(array $axles)
@@ -121,9 +121,9 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CabsByCarIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\CabsByCarIdRecordType $array
      */
-    public function addToCabs(\Baumeister\TecDocClient\Generated\CabsByCarIdRecordType $array)
+    public function addToCabs(\Myrzan\TecDocClient\Generated\CabsByCarIdRecordType $array)
     {
         $this->cabs[] = $array;
         return $this;
@@ -154,7 +154,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Gets as cabs
      *
-     * @return \Baumeister\TecDocClient\Generated\CabsByCarIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\CabsByCarIdRecordType[]
      */
     public function getCabs()
     {
@@ -164,7 +164,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Sets a new cabs
      *
-     * @param \Baumeister\TecDocClient\Generated\CabsByCarIdRecordType[] $cabs
+     * @param \Myrzan\TecDocClient\Generated\CabsByCarIdRecordType[] $cabs
      * @return self
      */
     public function setCabs(array $cabs)
@@ -199,9 +199,9 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\KbaNumbersByVehicleIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\KbaNumbersByVehicleIdRecordType $array
      */
-    public function addToKbaNumbers(\Baumeister\TecDocClient\Generated\KbaNumbersByVehicleIdRecordType $array)
+    public function addToKbaNumbers(\Myrzan\TecDocClient\Generated\KbaNumbersByVehicleIdRecordType $array)
     {
         $this->kbaNumbers[] = $array;
         return $this;
@@ -232,7 +232,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Gets as kbaNumbers
      *
-     * @return \Baumeister\TecDocClient\Generated\KbaNumbersByVehicleIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\KbaNumbersByVehicleIdRecordType[]
      */
     public function getKbaNumbers()
     {
@@ -242,7 +242,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Sets a new kbaNumbers
      *
-     * @param \Baumeister\TecDocClient\Generated\KbaNumbersByVehicleIdRecordType[] $kbaNumbers
+     * @param \Myrzan\TecDocClient\Generated\KbaNumbersByVehicleIdRecordType[] $kbaNumbers
      * @return self
      */
     public function setKbaNumbers(array $kbaNumbers)
@@ -255,9 +255,9 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\MotorCodesByCarIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\MotorCodesByCarIdRecordType $array
      */
-    public function addToMotorCodes(\Baumeister\TecDocClient\Generated\MotorCodesByCarIdRecordType $array)
+    public function addToMotorCodes(\Myrzan\TecDocClient\Generated\MotorCodesByCarIdRecordType $array)
     {
         $this->motorCodes[] = $array;
         return $this;
@@ -288,7 +288,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Gets as motorCodes
      *
-     * @return \Baumeister\TecDocClient\Generated\MotorCodesByCarIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\MotorCodesByCarIdRecordType[]
      */
     public function getMotorCodes()
     {
@@ -298,7 +298,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Sets a new motorCodes
      *
-     * @param \Baumeister\TecDocClient\Generated\MotorCodesByCarIdRecordType[] $motorCodes
+     * @param \Myrzan\TecDocClient\Generated\MotorCodesByCarIdRecordType[] $motorCodes
      * @return self
      */
     public function setMotorCodes(array $motorCodes)
@@ -311,9 +311,9 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\VehiclePrototypeRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\VehiclePrototypeRecordType $array
      */
-    public function addToProtoTypes(\Baumeister\TecDocClient\Generated\VehiclePrototypeRecordType $array)
+    public function addToProtoTypes(\Myrzan\TecDocClient\Generated\VehiclePrototypeRecordType $array)
     {
         $this->protoTypes[] = $array;
         return $this;
@@ -344,7 +344,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Gets as protoTypes
      *
-     * @return \Baumeister\TecDocClient\Generated\VehiclePrototypeRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\VehiclePrototypeRecordType[]
      */
     public function getProtoTypes()
     {
@@ -354,7 +354,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Sets a new protoTypes
      *
-     * @param \Baumeister\TecDocClient\Generated\VehiclePrototypeRecordType[] $protoTypes
+     * @param \Myrzan\TecDocClient\Generated\VehiclePrototypeRecordType[] $protoTypes
      * @return self
      */
     public function setProtoTypes(array $protoTypes)
@@ -367,9 +367,9 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\SecondaryTypesByCarIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\SecondaryTypesByCarIdRecordType $array
      */
-    public function addToSecondaryTypes(\Baumeister\TecDocClient\Generated\SecondaryTypesByCarIdRecordType $array)
+    public function addToSecondaryTypes(\Myrzan\TecDocClient\Generated\SecondaryTypesByCarIdRecordType $array)
     {
         $this->secondaryTypes[] = $array;
         return $this;
@@ -400,7 +400,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Gets as secondaryTypes
      *
-     * @return \Baumeister\TecDocClient\Generated\SecondaryTypesByCarIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\SecondaryTypesByCarIdRecordType[]
      */
     public function getSecondaryTypes()
     {
@@ -410,7 +410,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Sets a new secondaryTypes
      *
-     * @param \Baumeister\TecDocClient\Generated\SecondaryTypesByCarIdRecordType[] $secondaryTypes
+     * @param \Myrzan\TecDocClient\Generated\SecondaryTypesByCarIdRecordType[] $secondaryTypes
      * @return self
      */
     public function setSecondaryTypes(array $secondaryTypes)
@@ -422,7 +422,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Gets as vehicleDetails
      *
-     * @return \Baumeister\TecDocClient\Generated\VehicleByIdRecordType
+     * @return \Myrzan\TecDocClient\Generated\VehicleByIdRecordType
      */
     public function getVehicleDetails()
     {
@@ -432,10 +432,10 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Sets a new vehicleDetails
      *
-     * @param \Baumeister\TecDocClient\Generated\VehicleByIdRecordType $vehicleDetails
+     * @param \Myrzan\TecDocClient\Generated\VehicleByIdRecordType $vehicleDetails
      * @return self
      */
-    public function setVehicleDetails(\Baumeister\TecDocClient\Generated\VehicleByIdRecordType $vehicleDetails)
+    public function setVehicleDetails(\Myrzan\TecDocClient\Generated\VehicleByIdRecordType $vehicleDetails)
     {
         $this->vehicleDetails = $vehicleDetails;
         return $this;
@@ -444,7 +444,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Gets as vehicleRegistrationInfo
      *
-     * @return \Baumeister\TecDocClient\Generated\VehicleRegistrationInfoByIdRecordType
+     * @return \Myrzan\TecDocClient\Generated\VehicleRegistrationInfoByIdRecordType
      */
     public function getVehicleRegistrationInfo()
     {
@@ -454,10 +454,10 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Sets a new vehicleRegistrationInfo
      *
-     * @param \Baumeister\TecDocClient\Generated\VehicleRegistrationInfoByIdRecordType $vehicleRegistrationInfo
+     * @param \Myrzan\TecDocClient\Generated\VehicleRegistrationInfoByIdRecordType $vehicleRegistrationInfo
      * @return self
      */
-    public function setVehicleRegistrationInfo(\Baumeister\TecDocClient\Generated\VehicleRegistrationInfoByIdRecordType $vehicleRegistrationInfo)
+    public function setVehicleRegistrationInfo(\Myrzan\TecDocClient\Generated\VehicleRegistrationInfoByIdRecordType $vehicleRegistrationInfo)
     {
         $this->vehicleRegistrationInfo = $vehicleRegistrationInfo;
         return $this;
@@ -467,9 +467,9 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\WheelBasesByCarIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\WheelBasesByCarIdRecordType $array
      */
-    public function addToWheelBases(\Baumeister\TecDocClient\Generated\WheelBasesByCarIdRecordType $array)
+    public function addToWheelBases(\Myrzan\TecDocClient\Generated\WheelBasesByCarIdRecordType $array)
     {
         $this->wheelBases[] = $array;
         return $this;
@@ -500,7 +500,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Gets as wheelBases
      *
-     * @return \Baumeister\TecDocClient\Generated\WheelBasesByCarIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\WheelBasesByCarIdRecordType[]
      */
     public function getWheelBases()
     {
@@ -510,7 +510,7 @@ class VehicleByIds3RecordType extends VehicleByIds3RecordSrcType
     /**
      * Sets a new wheelBases
      *
-     * @param \Baumeister\TecDocClient\Generated\WheelBasesByCarIdRecordType[] $wheelBases
+     * @param \Myrzan\TecDocClient\Generated\WheelBasesByCarIdRecordType[] $wheelBases
      * @return self
      */
     public function setWheelBases(array $wheelBases)

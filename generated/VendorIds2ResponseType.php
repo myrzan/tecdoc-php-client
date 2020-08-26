@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing VendorIds2ResponseType
@@ -12,7 +12,7 @@ class VendorIds2ResponseType extends VendorIds2ResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\VendorIds2RecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\VendorIds2RecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class VendorIds2ResponseType extends VendorIds2ResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\VendorIds2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\VendorIds2RecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\VendorIds2RecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\VendorIds2RecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class VendorIds2ResponseType extends VendorIds2ResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\VendorIds2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\VendorIds2RecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class VendorIds2ResponseType extends VendorIds2ResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\VendorIds2RecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\VendorIds2RecordType[] $data
      * @return self
      */
     public function setData(array $data)

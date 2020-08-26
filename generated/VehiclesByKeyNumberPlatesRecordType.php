@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing VehiclesByKeyNumberPlatesRecordType
@@ -42,7 +42,7 @@ class VehiclesByKeyNumberPlatesRecordType extends VehiclesByKeyNumberPlatesRecor
     private $modelId = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\VehicleDetailsType $vehicleDetails
+     * @var \Myrzan\TecDocClient\Generated\VehicleDetailsType $vehicleDetails
      */
     private $vehicleDetails = null;
 
@@ -186,7 +186,7 @@ class VehiclesByKeyNumberPlatesRecordType extends VehiclesByKeyNumberPlatesRecor
     /**
      * Gets as vehicleDetails
      *
-     * @return \Baumeister\TecDocClient\Generated\VehicleDetailsType
+     * @return \Myrzan\TecDocClient\Generated\VehicleDetailsType
      */
     public function getVehicleDetails()
     {
@@ -196,10 +196,10 @@ class VehiclesByKeyNumberPlatesRecordType extends VehiclesByKeyNumberPlatesRecor
     /**
      * Sets a new vehicleDetails
      *
-     * @param \Baumeister\TecDocClient\Generated\VehicleDetailsType $vehicleDetails
+     * @param \Myrzan\TecDocClient\Generated\VehicleDetailsType $vehicleDetails
      * @return self
      */
-    public function setVehicleDetails(\Baumeister\TecDocClient\Generated\VehicleDetailsType $vehicleDetails)
+    public function setVehicleDetails(\Myrzan\TecDocClient\Generated\VehicleDetailsType $vehicleDetails)
     {
         $this->vehicleDetails = $vehicleDetails;
         return $this;

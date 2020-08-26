@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing DataSupplierFacetCountsType
@@ -19,7 +19,7 @@ class DataSupplierFacetCountsType
     private $total = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\DataSupplierFacetCountType[] $counts
+     * @var \Myrzan\TecDocClient\Generated\DataSupplierFacetCountType[] $counts
      */
     private $counts = [
         
@@ -55,9 +55,9 @@ class DataSupplierFacetCountsType
      * Adds as counts
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\DataSupplierFacetCountType $counts
+     * @param \Myrzan\TecDocClient\Generated\DataSupplierFacetCountType $counts
      */
-    public function addToCounts(\Baumeister\TecDocClient\Generated\DataSupplierFacetCountType $counts)
+    public function addToCounts(\Myrzan\TecDocClient\Generated\DataSupplierFacetCountType $counts)
     {
         $this->counts[] = $counts;
         return $this;
@@ -88,7 +88,7 @@ class DataSupplierFacetCountsType
     /**
      * Gets as counts
      *
-     * @return \Baumeister\TecDocClient\Generated\DataSupplierFacetCountType[]
+     * @return \Myrzan\TecDocClient\Generated\DataSupplierFacetCountType[]
      */
     public function getCounts()
     {
@@ -98,7 +98,7 @@ class DataSupplierFacetCountsType
     /**
      * Sets a new counts
      *
-     * @param \Baumeister\TecDocClient\Generated\DataSupplierFacetCountType[] $counts
+     * @param \Myrzan\TecDocClient\Generated\DataSupplierFacetCountType[] $counts
      * @return self
      */
     public function setCounts(array $counts)

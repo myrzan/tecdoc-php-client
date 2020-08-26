@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing CsgDocumentDataByArticleId2RecordType
@@ -12,19 +12,19 @@ class CsgDocumentDataByArticleId2RecordType extends CsgDocumentDataByArticleId2R
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleDocumentsByDocIdRecordType $articleDoc
+     * @var \Myrzan\TecDocClient\Generated\ArticleDocumentsByDocIdRecordType $articleDoc
      */
     private $articleDoc = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CoordinatesByArticleDocumentRecordType[] $coSeq
+     * @var \Myrzan\TecDocClient\Generated\CoordinatesByArticleDocumentRecordType[] $coSeq
      */
     private $coSeq = null;
 
     /**
      * Gets as articleDoc
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleDocumentsByDocIdRecordType
+     * @return \Myrzan\TecDocClient\Generated\ArticleDocumentsByDocIdRecordType
      */
     public function getArticleDoc()
     {
@@ -34,10 +34,10 @@ class CsgDocumentDataByArticleId2RecordType extends CsgDocumentDataByArticleId2R
     /**
      * Sets a new articleDoc
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleDocumentsByDocIdRecordType $articleDoc
+     * @param \Myrzan\TecDocClient\Generated\ArticleDocumentsByDocIdRecordType $articleDoc
      * @return self
      */
-    public function setArticleDoc(\Baumeister\TecDocClient\Generated\ArticleDocumentsByDocIdRecordType $articleDoc)
+    public function setArticleDoc(\Myrzan\TecDocClient\Generated\ArticleDocumentsByDocIdRecordType $articleDoc)
     {
         $this->articleDoc = $articleDoc;
         return $this;
@@ -47,9 +47,9 @@ class CsgDocumentDataByArticleId2RecordType extends CsgDocumentDataByArticleId2R
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CoordinatesByArticleDocumentRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\CoordinatesByArticleDocumentRecordType $array
      */
-    public function addToCoSeq(\Baumeister\TecDocClient\Generated\CoordinatesByArticleDocumentRecordType $array)
+    public function addToCoSeq(\Myrzan\TecDocClient\Generated\CoordinatesByArticleDocumentRecordType $array)
     {
         $this->coSeq[] = $array;
         return $this;
@@ -80,7 +80,7 @@ class CsgDocumentDataByArticleId2RecordType extends CsgDocumentDataByArticleId2R
     /**
      * Gets as coSeq
      *
-     * @return \Baumeister\TecDocClient\Generated\CoordinatesByArticleDocumentRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\CoordinatesByArticleDocumentRecordType[]
      */
     public function getCoSeq()
     {
@@ -90,7 +90,7 @@ class CsgDocumentDataByArticleId2RecordType extends CsgDocumentDataByArticleId2R
     /**
      * Sets a new coSeq
      *
-     * @param \Baumeister\TecDocClient\Generated\CoordinatesByArticleDocumentRecordType[] $coSeq
+     * @param \Myrzan\TecDocClient\Generated\CoordinatesByArticleDocumentRecordType[] $coSeq
      * @return self
      */
     public function setCoSeq(array $coSeq)

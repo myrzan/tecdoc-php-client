@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing KeyValuesResponseType
@@ -12,7 +12,7 @@ class KeyValuesResponseType extends KeyValuesResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\KeyValuesRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\KeyValuesRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class KeyValuesResponseType extends KeyValuesResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\KeyValuesRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\KeyValuesRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\KeyValuesRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\KeyValuesRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class KeyValuesResponseType extends KeyValuesResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\KeyValuesRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\KeyValuesRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class KeyValuesResponseType extends KeyValuesResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\KeyValuesRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\KeyValuesRecordType[] $data
      * @return self
      */
     public function setData(array $data)

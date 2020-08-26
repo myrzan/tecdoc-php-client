@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing LinkedArticlesResponseType
@@ -12,7 +12,7 @@ class LinkedArticlesResponseType extends LinkedArticlesResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\LinkedArticlesRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\LinkedArticlesRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class LinkedArticlesResponseType extends LinkedArticlesResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\LinkedArticlesRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\LinkedArticlesRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\LinkedArticlesRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\LinkedArticlesRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class LinkedArticlesResponseType extends LinkedArticlesResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\LinkedArticlesRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\LinkedArticlesRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class LinkedArticlesResponseType extends LinkedArticlesResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\LinkedArticlesRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\LinkedArticlesRecordType[] $data
      * @return self
      */
     public function setData(array $data)

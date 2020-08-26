@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing VehicleIdsByCriteriaResponseType
@@ -12,7 +12,7 @@ class VehicleIdsByCriteriaResponseType extends VehicleIdsByCriteriaResponseSrcTy
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\VehicleIdsByCriteriaRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\VehicleIdsByCriteriaRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class VehicleIdsByCriteriaResponseType extends VehicleIdsByCriteriaResponseSrcTy
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\VehicleIdsByCriteriaRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\VehicleIdsByCriteriaRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\VehicleIdsByCriteriaRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\VehicleIdsByCriteriaRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class VehicleIdsByCriteriaResponseType extends VehicleIdsByCriteriaResponseSrcTy
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\VehicleIdsByCriteriaRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\VehicleIdsByCriteriaRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class VehicleIdsByCriteriaResponseType extends VehicleIdsByCriteriaResponseSrcTy
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\VehicleIdsByCriteriaRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\VehicleIdsByCriteriaRecordType[] $data
      * @return self
      */
     public function setData(array $data)

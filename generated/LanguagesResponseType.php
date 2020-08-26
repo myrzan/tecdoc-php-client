@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing LanguagesResponseType
@@ -12,7 +12,7 @@ class LanguagesResponseType extends LanguagesResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\LanguagesRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\LanguagesRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class LanguagesResponseType extends LanguagesResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\LanguagesRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\LanguagesRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\LanguagesRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\LanguagesRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class LanguagesResponseType extends LanguagesResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\LanguagesRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\LanguagesRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class LanguagesResponseType extends LanguagesResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\LanguagesRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\LanguagesRecordType[] $data
      * @return self
      */
     public function setData(array $data)

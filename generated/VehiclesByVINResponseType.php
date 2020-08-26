@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing VehiclesByVINResponseType
@@ -12,7 +12,7 @@ class VehiclesByVINResponseType extends VehiclesByVINResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MatchesByVINRecordType $data
+     * @var \Myrzan\TecDocClient\Generated\MatchesByVINRecordType $data
      */
     private $data = null;
 
@@ -29,7 +29,7 @@ class VehiclesByVINResponseType extends VehiclesByVINResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\MatchesByVINRecordType
+     * @return \Myrzan\TecDocClient\Generated\MatchesByVINRecordType
      */
     public function getData()
     {
@@ -39,10 +39,10 @@ class VehiclesByVINResponseType extends VehiclesByVINResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\MatchesByVINRecordType $data
+     * @param \Myrzan\TecDocClient\Generated\MatchesByVINRecordType $data
      * @return self
      */
-    public function setData(\Baumeister\TecDocClient\Generated\MatchesByVINRecordType $data)
+    public function setData(\Myrzan\TecDocClient\Generated\MatchesByVINRecordType $data)
     {
         $this->data = $data;
         return $this;

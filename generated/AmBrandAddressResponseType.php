@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing AmBrandAddressResponseType
@@ -12,7 +12,7 @@ class AmBrandAddressResponseType extends AmBrandAddressResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AmBrandAddressRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\AmBrandAddressRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class AmBrandAddressResponseType extends AmBrandAddressResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AmBrandAddressRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\AmBrandAddressRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\AmBrandAddressRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\AmBrandAddressRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class AmBrandAddressResponseType extends AmBrandAddressResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\AmBrandAddressRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\AmBrandAddressRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class AmBrandAddressResponseType extends AmBrandAddressResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\AmBrandAddressRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\AmBrandAddressRecordType[] $data
      * @return self
      */
     public function setData(array $data)

@@ -1,15 +1,15 @@
 <?php
 
-namespace Baumeister\TecDocClient\Tests;
+namespace Myrzan\TecDocClient\Tests;
 
-use Baumeister\TecDocClient\Client;
-use Baumeister\TecDocClient\Generated\GetAmBrands;
-use Baumeister\TecDocClient\Generated\GetArticleLinkedAllLinkingTarget4;
-use Baumeister\TecDocClient\Generated\GetArticleLinkedAllLinkingTargetsByIds3;
-use Baumeister\TecDocClient\Generated\GetArticles;
-use Baumeister\TecDocClient\Generated\GetLanguages;
-use Baumeister\TecDocClient\Generated\GetVehicleByIds3;
-use Baumeister\TecDocClient\Generated\LinkedArticlePairType;
+use Myrzan\TecDocClient\Client;
+use Myrzan\TecDocClient\Generated\GetAmBrands;
+use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTarget4;
+use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTargetsByIds3;
+use Myrzan\TecDocClient\Generated\GetArticles;
+use Myrzan\TecDocClient\Generated\GetLanguages;
+use Myrzan\TecDocClient\Generated\GetVehicleByIds3;
+use Myrzan\TecDocClient\Generated\LinkedArticlePairType;
 use PHPUnit\Framework\TestCase;
 
 class ClientTest extends TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleLinkedAllLinkingTargetsByIds3RequestType
@@ -32,7 +32,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RequestType extends ArticleLinkedAllLi
     private $lang = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\LinkedArticlePairType[] $linkedArticlePairs
+     * @var \Myrzan\TecDocClient\Generated\LinkedArticlePairType[] $linkedArticlePairs
      */
     private $linkedArticlePairs = null;
 
@@ -143,9 +143,9 @@ class ArticleLinkedAllLinkingTargetsByIds3RequestType extends ArticleLinkedAllLi
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\LinkedArticlePairType $array
+     * @param \Myrzan\TecDocClient\Generated\LinkedArticlePairType $array
      */
-    public function addToLinkedArticlePairs(\Baumeister\TecDocClient\Generated\LinkedArticlePairType $array)
+    public function addToLinkedArticlePairs(\Myrzan\TecDocClient\Generated\LinkedArticlePairType $array)
     {
         $this->linkedArticlePairs[] = $array;
         return $this;
@@ -176,7 +176,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RequestType extends ArticleLinkedAllLi
     /**
      * Gets as linkedArticlePairs
      *
-     * @return \Baumeister\TecDocClient\Generated\LinkedArticlePairType[]
+     * @return \Myrzan\TecDocClient\Generated\LinkedArticlePairType[]
      */
     public function getLinkedArticlePairs()
     {
@@ -186,7 +186,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RequestType extends ArticleLinkedAllLi
     /**
      * Sets a new linkedArticlePairs
      *
-     * @param \Baumeister\TecDocClient\Generated\LinkedArticlePairType[] $linkedArticlePairs
+     * @param \Myrzan\TecDocClient\Generated\LinkedArticlePairType[] $linkedArticlePairs
      * @return self
      */
     public function setLinkedArticlePairs(array $linkedArticlePairs)

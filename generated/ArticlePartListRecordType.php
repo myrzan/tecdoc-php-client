@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticlePartListRecordType
@@ -12,12 +12,12 @@ class ArticlePartListRecordType extends ArticlePartListRecordSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CsgDocumentDataByArticleId2RecordType[] $csgDocumentData
+     * @var \Myrzan\TecDocClient\Generated\CsgDocumentDataByArticleId2RecordType[] $csgDocumentData
      */
     private $csgDocumentData = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticlePartList3RecordType[] $partlistInfo
+     * @var \Myrzan\TecDocClient\Generated\ArticlePartList3RecordType[] $partlistInfo
      */
     private $partlistInfo = null;
 
@@ -25,9 +25,9 @@ class ArticlePartListRecordType extends ArticlePartListRecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CsgDocumentDataByArticleId2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\CsgDocumentDataByArticleId2RecordType $array
      */
-    public function addToCsgDocumentData(\Baumeister\TecDocClient\Generated\CsgDocumentDataByArticleId2RecordType $array)
+    public function addToCsgDocumentData(\Myrzan\TecDocClient\Generated\CsgDocumentDataByArticleId2RecordType $array)
     {
         $this->csgDocumentData[] = $array;
         return $this;
@@ -58,7 +58,7 @@ class ArticlePartListRecordType extends ArticlePartListRecordSrcType
     /**
      * Gets as csgDocumentData
      *
-     * @return \Baumeister\TecDocClient\Generated\CsgDocumentDataByArticleId2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\CsgDocumentDataByArticleId2RecordType[]
      */
     public function getCsgDocumentData()
     {
@@ -68,7 +68,7 @@ class ArticlePartListRecordType extends ArticlePartListRecordSrcType
     /**
      * Sets a new csgDocumentData
      *
-     * @param \Baumeister\TecDocClient\Generated\CsgDocumentDataByArticleId2RecordType[] $csgDocumentData
+     * @param \Myrzan\TecDocClient\Generated\CsgDocumentDataByArticleId2RecordType[] $csgDocumentData
      * @return self
      */
     public function setCsgDocumentData(array $csgDocumentData)
@@ -81,9 +81,9 @@ class ArticlePartListRecordType extends ArticlePartListRecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticlePartList3RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticlePartList3RecordType $array
      */
-    public function addToPartlistInfo(\Baumeister\TecDocClient\Generated\ArticlePartList3RecordType $array)
+    public function addToPartlistInfo(\Myrzan\TecDocClient\Generated\ArticlePartList3RecordType $array)
     {
         $this->partlistInfo[] = $array;
         return $this;
@@ -114,7 +114,7 @@ class ArticlePartListRecordType extends ArticlePartListRecordSrcType
     /**
      * Gets as partlistInfo
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticlePartList3RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticlePartList3RecordType[]
      */
     public function getPartlistInfo()
     {
@@ -124,7 +124,7 @@ class ArticlePartListRecordType extends ArticlePartListRecordSrcType
     /**
      * Sets a new partlistInfo
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticlePartList3RecordType[] $partlistInfo
+     * @param \Myrzan\TecDocClient\Generated\ArticlePartList3RecordType[] $partlistInfo
      * @return self
      */
     public function setPartlistInfo(array $partlistInfo)

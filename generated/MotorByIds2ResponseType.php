@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing MotorByIds2ResponseType
@@ -12,7 +12,7 @@ class MotorByIds2ResponseType extends MotorByIds2ResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MotorByIds2RecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\MotorByIds2RecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class MotorByIds2ResponseType extends MotorByIds2ResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\MotorByIds2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\MotorByIds2RecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\MotorByIds2RecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\MotorByIds2RecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class MotorByIds2ResponseType extends MotorByIds2ResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\MotorByIds2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\MotorByIds2RecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class MotorByIds2ResponseType extends MotorByIds2ResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\MotorByIds2RecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\MotorByIds2RecordType[] $data
      * @return self
      */
     public function setData(array $data)

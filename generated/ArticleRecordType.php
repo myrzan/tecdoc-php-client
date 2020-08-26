@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleRecordType
@@ -32,19 +32,19 @@ class ArticleRecordType
     private $mfrName = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MiscArticleDataRecordType $misc
+     * @var \Myrzan\TecDocClient\Generated\MiscArticleDataRecordType $misc
      */
     private $misc = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\GenericArticleRecordType[] $genericArticles
+     * @var \Myrzan\TecDocClient\Generated\GenericArticleRecordType[] $genericArticles
      */
     private $genericArticles = [
         
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleTextRecordType[] $articleText
+     * @var \Myrzan\TecDocClient\Generated\ArticleTextRecordType[] $articleText
      */
     private $articleText = [
         
@@ -67,7 +67,7 @@ class ArticleRecordType
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleRefRecordType[] $oemNumbers
+     * @var \Myrzan\TecDocClient\Generated\ArticleRefRecordType[] $oemNumbers
      */
     private $oemNumbers = [
         
@@ -76,7 +76,7 @@ class ArticleRecordType
     /**
      * This Article replaces these articles
      *
-     * @var \Baumeister\TecDocClient\Generated\ArticleRefRecordType[] $replacesArticles
+     * @var \Myrzan\TecDocClient\Generated\ArticleRefRecordType[] $replacesArticles
      */
     private $replacesArticles = [
         
@@ -85,7 +85,7 @@ class ArticleRecordType
     /**
      * This article has been replaced by these articles
      *
-     * @var \Baumeister\TecDocClient\Generated\ArticleRefRecordType[] $replacedByArticles
+     * @var \Myrzan\TecDocClient\Generated\ArticleRefRecordType[] $replacedByArticles
      */
     private $replacedByArticles = [
         
@@ -94,7 +94,7 @@ class ArticleRecordType
     /**
      * Article Criteria
      *
-     * @var \Baumeister\TecDocClient\Generated\CriteriaRecordType[] $articleCriteria
+     * @var \Myrzan\TecDocClient\Generated\CriteriaRecordType[] $articleCriteria
      */
     private $articleCriteria = [
         
@@ -103,7 +103,7 @@ class ArticleRecordType
     /**
      * Matching Linkages (only populated if a linkage filter was passed in as part of the request)
      *
-     * @var \Baumeister\TecDocClient\Generated\ArticleLinkageRecordType[] $linkages
+     * @var \Myrzan\TecDocClient\Generated\ArticleLinkageRecordType[] $linkages
      */
     private $linkages = [
         
@@ -112,7 +112,7 @@ class ArticleRecordType
     /**
      * PDF Documents Associated with the Article
      *
-     * @var \Baumeister\TecDocClient\Generated\PDFRecordType[] $pdfs
+     * @var \Myrzan\TecDocClient\Generated\PDFRecordType[] $pdfs
      */
     private $pdfs = [
         
@@ -121,7 +121,7 @@ class ArticleRecordType
     /**
      * Images Associated with the Article
      *
-     * @var \Baumeister\TecDocClient\Generated\ImageRecordType[] $images
+     * @var \Myrzan\TecDocClient\Generated\ImageRecordType[] $images
      */
     private $images = [
         
@@ -130,14 +130,14 @@ class ArticleRecordType
     /**
      * Comparable numbers associated with this part (Note: Right now this is only populated if the comparable numbers match the search query).
      *
-     * @var \Baumeister\TecDocClient\Generated\ArticleRefRecordType[] $comparableNumbers
+     * @var \Myrzan\TecDocClient\Generated\ArticleRefRecordType[] $comparableNumbers
      */
     private $comparableNumbers = [
         
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\SearchQueryMatchType[] $searchQueryMatches
+     * @var \Myrzan\TecDocClient\Generated\SearchQueryMatchType[] $searchQueryMatches
      */
     private $searchQueryMatches = [
         
@@ -146,7 +146,7 @@ class ArticleRecordType
     /**
      * Links Associated with the Article
      *
-     * @var \Baumeister\TecDocClient\Generated\LinkRecordType[] $links
+     * @var \Myrzan\TecDocClient\Generated\LinkRecordType[] $links
      */
     private $links = [
         
@@ -162,7 +162,7 @@ class ArticleRecordType
     /**
      * Prices Associated with the Article
      *
-     * @var \Baumeister\TecDocClient\Generated\PriceRecordType[] $prices
+     * @var \Myrzan\TecDocClient\Generated\PriceRecordType[] $prices
      */
     private $prices = [
         
@@ -259,7 +259,7 @@ class ArticleRecordType
     /**
      * Gets as misc
      *
-     * @return \Baumeister\TecDocClient\Generated\MiscArticleDataRecordType
+     * @return \Myrzan\TecDocClient\Generated\MiscArticleDataRecordType
      */
     public function getMisc()
     {
@@ -269,10 +269,10 @@ class ArticleRecordType
     /**
      * Sets a new misc
      *
-     * @param \Baumeister\TecDocClient\Generated\MiscArticleDataRecordType $misc
+     * @param \Myrzan\TecDocClient\Generated\MiscArticleDataRecordType $misc
      * @return self
      */
-    public function setMisc(\Baumeister\TecDocClient\Generated\MiscArticleDataRecordType $misc)
+    public function setMisc(\Myrzan\TecDocClient\Generated\MiscArticleDataRecordType $misc)
     {
         $this->misc = $misc;
         return $this;
@@ -282,9 +282,9 @@ class ArticleRecordType
      * Adds as genericArticles
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\GenericArticleRecordType $genericArticles
+     * @param \Myrzan\TecDocClient\Generated\GenericArticleRecordType $genericArticles
      */
-    public function addToGenericArticles(\Baumeister\TecDocClient\Generated\GenericArticleRecordType $genericArticles)
+    public function addToGenericArticles(\Myrzan\TecDocClient\Generated\GenericArticleRecordType $genericArticles)
     {
         $this->genericArticles[] = $genericArticles;
         return $this;
@@ -315,7 +315,7 @@ class ArticleRecordType
     /**
      * Gets as genericArticles
      *
-     * @return \Baumeister\TecDocClient\Generated\GenericArticleRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\GenericArticleRecordType[]
      */
     public function getGenericArticles()
     {
@@ -325,7 +325,7 @@ class ArticleRecordType
     /**
      * Sets a new genericArticles
      *
-     * @param \Baumeister\TecDocClient\Generated\GenericArticleRecordType[] $genericArticles
+     * @param \Myrzan\TecDocClient\Generated\GenericArticleRecordType[] $genericArticles
      * @return self
      */
     public function setGenericArticles(array $genericArticles)
@@ -338,9 +338,9 @@ class ArticleRecordType
      * Adds as articleText
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleTextRecordType $articleText
+     * @param \Myrzan\TecDocClient\Generated\ArticleTextRecordType $articleText
      */
-    public function addToArticleText(\Baumeister\TecDocClient\Generated\ArticleTextRecordType $articleText)
+    public function addToArticleText(\Myrzan\TecDocClient\Generated\ArticleTextRecordType $articleText)
     {
         $this->articleText[] = $articleText;
         return $this;
@@ -371,7 +371,7 @@ class ArticleRecordType
     /**
      * Gets as articleText
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleTextRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleTextRecordType[]
      */
     public function getArticleText()
     {
@@ -381,7 +381,7 @@ class ArticleRecordType
     /**
      * Sets a new articleText
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleTextRecordType[] $articleText
+     * @param \Myrzan\TecDocClient\Generated\ArticleTextRecordType[] $articleText
      * @return self
      */
     public function setArticleText(array $articleText)
@@ -516,9 +516,9 @@ class ArticleRecordType
      * Adds as oemNumbers
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleRefRecordType $oemNumbers
+     * @param \Myrzan\TecDocClient\Generated\ArticleRefRecordType $oemNumbers
      */
-    public function addToOemNumbers(\Baumeister\TecDocClient\Generated\ArticleRefRecordType $oemNumbers)
+    public function addToOemNumbers(\Myrzan\TecDocClient\Generated\ArticleRefRecordType $oemNumbers)
     {
         $this->oemNumbers[] = $oemNumbers;
         return $this;
@@ -549,7 +549,7 @@ class ArticleRecordType
     /**
      * Gets as oemNumbers
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleRefRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleRefRecordType[]
      */
     public function getOemNumbers()
     {
@@ -559,7 +559,7 @@ class ArticleRecordType
     /**
      * Sets a new oemNumbers
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleRefRecordType[] $oemNumbers
+     * @param \Myrzan\TecDocClient\Generated\ArticleRefRecordType[] $oemNumbers
      * @return self
      */
     public function setOemNumbers(array $oemNumbers)
@@ -574,9 +574,9 @@ class ArticleRecordType
      * This Article replaces these articles
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleRefRecordType $replacesArticles
+     * @param \Myrzan\TecDocClient\Generated\ArticleRefRecordType $replacesArticles
      */
-    public function addToReplacesArticles(\Baumeister\TecDocClient\Generated\ArticleRefRecordType $replacesArticles)
+    public function addToReplacesArticles(\Myrzan\TecDocClient\Generated\ArticleRefRecordType $replacesArticles)
     {
         $this->replacesArticles[] = $replacesArticles;
         return $this;
@@ -613,7 +613,7 @@ class ArticleRecordType
      *
      * This Article replaces these articles
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleRefRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleRefRecordType[]
      */
     public function getReplacesArticles()
     {
@@ -625,7 +625,7 @@ class ArticleRecordType
      *
      * This Article replaces these articles
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleRefRecordType[] $replacesArticles
+     * @param \Myrzan\TecDocClient\Generated\ArticleRefRecordType[] $replacesArticles
      * @return self
      */
     public function setReplacesArticles(array $replacesArticles)
@@ -640,9 +640,9 @@ class ArticleRecordType
      * This article has been replaced by these articles
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleRefRecordType $replacedByArticles
+     * @param \Myrzan\TecDocClient\Generated\ArticleRefRecordType $replacedByArticles
      */
-    public function addToReplacedByArticles(\Baumeister\TecDocClient\Generated\ArticleRefRecordType $replacedByArticles)
+    public function addToReplacedByArticles(\Myrzan\TecDocClient\Generated\ArticleRefRecordType $replacedByArticles)
     {
         $this->replacedByArticles[] = $replacedByArticles;
         return $this;
@@ -679,7 +679,7 @@ class ArticleRecordType
      *
      * This article has been replaced by these articles
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleRefRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleRefRecordType[]
      */
     public function getReplacedByArticles()
     {
@@ -691,7 +691,7 @@ class ArticleRecordType
      *
      * This article has been replaced by these articles
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleRefRecordType[] $replacedByArticles
+     * @param \Myrzan\TecDocClient\Generated\ArticleRefRecordType[] $replacedByArticles
      * @return self
      */
     public function setReplacedByArticles(array $replacedByArticles)
@@ -706,9 +706,9 @@ class ArticleRecordType
      * Article Criteria
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CriteriaRecordType $articleCriteria
+     * @param \Myrzan\TecDocClient\Generated\CriteriaRecordType $articleCriteria
      */
-    public function addToArticleCriteria(\Baumeister\TecDocClient\Generated\CriteriaRecordType $articleCriteria)
+    public function addToArticleCriteria(\Myrzan\TecDocClient\Generated\CriteriaRecordType $articleCriteria)
     {
         $this->articleCriteria[] = $articleCriteria;
         return $this;
@@ -745,7 +745,7 @@ class ArticleRecordType
      *
      * Article Criteria
      *
-     * @return \Baumeister\TecDocClient\Generated\CriteriaRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\CriteriaRecordType[]
      */
     public function getArticleCriteria()
     {
@@ -757,7 +757,7 @@ class ArticleRecordType
      *
      * Article Criteria
      *
-     * @param \Baumeister\TecDocClient\Generated\CriteriaRecordType[] $articleCriteria
+     * @param \Myrzan\TecDocClient\Generated\CriteriaRecordType[] $articleCriteria
      * @return self
      */
     public function setArticleCriteria(array $articleCriteria)
@@ -772,9 +772,9 @@ class ArticleRecordType
      * Matching Linkages (only populated if a linkage filter was passed in as part of the request)
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkageRecordType $linkages
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkageRecordType $linkages
      */
-    public function addToLinkages(\Baumeister\TecDocClient\Generated\ArticleLinkageRecordType $linkages)
+    public function addToLinkages(\Myrzan\TecDocClient\Generated\ArticleLinkageRecordType $linkages)
     {
         $this->linkages[] = $linkages;
         return $this;
@@ -811,7 +811,7 @@ class ArticleRecordType
      *
      * Matching Linkages (only populated if a linkage filter was passed in as part of the request)
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleLinkageRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleLinkageRecordType[]
      */
     public function getLinkages()
     {
@@ -823,7 +823,7 @@ class ArticleRecordType
      *
      * Matching Linkages (only populated if a linkage filter was passed in as part of the request)
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkageRecordType[] $linkages
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkageRecordType[] $linkages
      * @return self
      */
     public function setLinkages(array $linkages)
@@ -838,9 +838,9 @@ class ArticleRecordType
      * PDF Documents Associated with the Article
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\PDFRecordType $pdfs
+     * @param \Myrzan\TecDocClient\Generated\PDFRecordType $pdfs
      */
-    public function addToPdfs(\Baumeister\TecDocClient\Generated\PDFRecordType $pdfs)
+    public function addToPdfs(\Myrzan\TecDocClient\Generated\PDFRecordType $pdfs)
     {
         $this->pdfs[] = $pdfs;
         return $this;
@@ -877,7 +877,7 @@ class ArticleRecordType
      *
      * PDF Documents Associated with the Article
      *
-     * @return \Baumeister\TecDocClient\Generated\PDFRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\PDFRecordType[]
      */
     public function getPdfs()
     {
@@ -889,7 +889,7 @@ class ArticleRecordType
      *
      * PDF Documents Associated with the Article
      *
-     * @param \Baumeister\TecDocClient\Generated\PDFRecordType[] $pdfs
+     * @param \Myrzan\TecDocClient\Generated\PDFRecordType[] $pdfs
      * @return self
      */
     public function setPdfs(array $pdfs)
@@ -904,9 +904,9 @@ class ArticleRecordType
      * Images Associated with the Article
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ImageRecordType $images
+     * @param \Myrzan\TecDocClient\Generated\ImageRecordType $images
      */
-    public function addToImages(\Baumeister\TecDocClient\Generated\ImageRecordType $images)
+    public function addToImages(\Myrzan\TecDocClient\Generated\ImageRecordType $images)
     {
         $this->images[] = $images;
         return $this;
@@ -943,7 +943,7 @@ class ArticleRecordType
      *
      * Images Associated with the Article
      *
-     * @return \Baumeister\TecDocClient\Generated\ImageRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ImageRecordType[]
      */
     public function getImages()
     {
@@ -955,7 +955,7 @@ class ArticleRecordType
      *
      * Images Associated with the Article
      *
-     * @param \Baumeister\TecDocClient\Generated\ImageRecordType[] $images
+     * @param \Myrzan\TecDocClient\Generated\ImageRecordType[] $images
      * @return self
      */
     public function setImages(array $images)
@@ -970,9 +970,9 @@ class ArticleRecordType
      * Comparable numbers associated with this part (Note: Right now this is only populated if the comparable numbers match the search query).
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleRefRecordType $comparableNumbers
+     * @param \Myrzan\TecDocClient\Generated\ArticleRefRecordType $comparableNumbers
      */
-    public function addToComparableNumbers(\Baumeister\TecDocClient\Generated\ArticleRefRecordType $comparableNumbers)
+    public function addToComparableNumbers(\Myrzan\TecDocClient\Generated\ArticleRefRecordType $comparableNumbers)
     {
         $this->comparableNumbers[] = $comparableNumbers;
         return $this;
@@ -1009,7 +1009,7 @@ class ArticleRecordType
      *
      * Comparable numbers associated with this part (Note: Right now this is only populated if the comparable numbers match the search query).
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleRefRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleRefRecordType[]
      */
     public function getComparableNumbers()
     {
@@ -1021,7 +1021,7 @@ class ArticleRecordType
      *
      * Comparable numbers associated with this part (Note: Right now this is only populated if the comparable numbers match the search query).
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleRefRecordType[] $comparableNumbers
+     * @param \Myrzan\TecDocClient\Generated\ArticleRefRecordType[] $comparableNumbers
      * @return self
      */
     public function setComparableNumbers(array $comparableNumbers)
@@ -1034,9 +1034,9 @@ class ArticleRecordType
      * Adds as searchQueryMatches
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\SearchQueryMatchType $searchQueryMatches
+     * @param \Myrzan\TecDocClient\Generated\SearchQueryMatchType $searchQueryMatches
      */
-    public function addToSearchQueryMatches(\Baumeister\TecDocClient\Generated\SearchQueryMatchType $searchQueryMatches)
+    public function addToSearchQueryMatches(\Myrzan\TecDocClient\Generated\SearchQueryMatchType $searchQueryMatches)
     {
         $this->searchQueryMatches[] = $searchQueryMatches;
         return $this;
@@ -1067,7 +1067,7 @@ class ArticleRecordType
     /**
      * Gets as searchQueryMatches
      *
-     * @return \Baumeister\TecDocClient\Generated\SearchQueryMatchType[]
+     * @return \Myrzan\TecDocClient\Generated\SearchQueryMatchType[]
      */
     public function getSearchQueryMatches()
     {
@@ -1077,7 +1077,7 @@ class ArticleRecordType
     /**
      * Sets a new searchQueryMatches
      *
-     * @param \Baumeister\TecDocClient\Generated\SearchQueryMatchType[] $searchQueryMatches
+     * @param \Myrzan\TecDocClient\Generated\SearchQueryMatchType[] $searchQueryMatches
      * @return self
      */
     public function setSearchQueryMatches(array $searchQueryMatches)
@@ -1092,9 +1092,9 @@ class ArticleRecordType
      * Links Associated with the Article
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\LinkRecordType $links
+     * @param \Myrzan\TecDocClient\Generated\LinkRecordType $links
      */
-    public function addToLinks(\Baumeister\TecDocClient\Generated\LinkRecordType $links)
+    public function addToLinks(\Myrzan\TecDocClient\Generated\LinkRecordType $links)
     {
         $this->links[] = $links;
         return $this;
@@ -1131,7 +1131,7 @@ class ArticleRecordType
      *
      * Links Associated with the Article
      *
-     * @return \Baumeister\TecDocClient\Generated\LinkRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\LinkRecordType[]
      */
     public function getLinks()
     {
@@ -1143,7 +1143,7 @@ class ArticleRecordType
      *
      * Links Associated with the Article
      *
-     * @param \Baumeister\TecDocClient\Generated\LinkRecordType[] $links
+     * @param \Myrzan\TecDocClient\Generated\LinkRecordType[] $links
      * @return self
      */
     public function setLinks(array $links)
@@ -1184,9 +1184,9 @@ class ArticleRecordType
      * Prices Associated with the Article
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\PriceRecordType $prices
+     * @param \Myrzan\TecDocClient\Generated\PriceRecordType $prices
      */
-    public function addToPrices(\Baumeister\TecDocClient\Generated\PriceRecordType $prices)
+    public function addToPrices(\Myrzan\TecDocClient\Generated\PriceRecordType $prices)
     {
         $this->prices[] = $prices;
         return $this;
@@ -1223,7 +1223,7 @@ class ArticleRecordType
      *
      * Prices Associated with the Article
      *
-     * @return \Baumeister\TecDocClient\Generated\PriceRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\PriceRecordType[]
      */
     public function getPrices()
     {
@@ -1235,7 +1235,7 @@ class ArticleRecordType
      *
      * Prices Associated with the Article
      *
-     * @param \Baumeister\TecDocClient\Generated\PriceRecordType[] $prices
+     * @param \Myrzan\TecDocClient\Generated\PriceRecordType[] $prices
      * @return self
      */
     public function setPrices(array $prices)

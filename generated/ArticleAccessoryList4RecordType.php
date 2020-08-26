@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleAccessoryList4RecordType
@@ -12,12 +12,12 @@ class ArticleAccessoryList4RecordType extends ArticleAccessoryList4RecordSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleAccessoryImmediateAttributsRecordType[] $accessoryAttributs
+     * @var \Myrzan\TecDocClient\Generated\ArticleAccessoryImmediateAttributsRecordType[] $accessoryAttributs
      */
     private $accessoryAttributs = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleAccessoryList3RecordType $accessoryDetails
+     * @var \Myrzan\TecDocClient\Generated\ArticleAccessoryList3RecordType $accessoryDetails
      */
     private $accessoryDetails = null;
 
@@ -25,9 +25,9 @@ class ArticleAccessoryList4RecordType extends ArticleAccessoryList4RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleAccessoryImmediateAttributsRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleAccessoryImmediateAttributsRecordType $array
      */
-    public function addToAccessoryAttributs(\Baumeister\TecDocClient\Generated\ArticleAccessoryImmediateAttributsRecordType $array)
+    public function addToAccessoryAttributs(\Myrzan\TecDocClient\Generated\ArticleAccessoryImmediateAttributsRecordType $array)
     {
         $this->accessoryAttributs[] = $array;
         return $this;
@@ -58,7 +58,7 @@ class ArticleAccessoryList4RecordType extends ArticleAccessoryList4RecordSrcType
     /**
      * Gets as accessoryAttributs
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleAccessoryImmediateAttributsRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleAccessoryImmediateAttributsRecordType[]
      */
     public function getAccessoryAttributs()
     {
@@ -68,7 +68,7 @@ class ArticleAccessoryList4RecordType extends ArticleAccessoryList4RecordSrcType
     /**
      * Sets a new accessoryAttributs
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleAccessoryImmediateAttributsRecordType[] $accessoryAttributs
+     * @param \Myrzan\TecDocClient\Generated\ArticleAccessoryImmediateAttributsRecordType[] $accessoryAttributs
      * @return self
      */
     public function setAccessoryAttributs(array $accessoryAttributs)
@@ -80,7 +80,7 @@ class ArticleAccessoryList4RecordType extends ArticleAccessoryList4RecordSrcType
     /**
      * Gets as accessoryDetails
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleAccessoryList3RecordType
+     * @return \Myrzan\TecDocClient\Generated\ArticleAccessoryList3RecordType
      */
     public function getAccessoryDetails()
     {
@@ -90,10 +90,10 @@ class ArticleAccessoryList4RecordType extends ArticleAccessoryList4RecordSrcType
     /**
      * Sets a new accessoryDetails
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleAccessoryList3RecordType $accessoryDetails
+     * @param \Myrzan\TecDocClient\Generated\ArticleAccessoryList3RecordType $accessoryDetails
      * @return self
      */
-    public function setAccessoryDetails(\Baumeister\TecDocClient\Generated\ArticleAccessoryList3RecordType $accessoryDetails)
+    public function setAccessoryDetails(\Myrzan\TecDocClient\Generated\ArticleAccessoryList3RecordType $accessoryDetails)
     {
         $this->accessoryDetails = $accessoryDetails;
         return $this;

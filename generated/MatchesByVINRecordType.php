@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing MatchesByVINRecordType
@@ -12,17 +12,17 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MatchingManufacturersByVINRecordType[] $matchingManufacturers
+     * @var \Myrzan\TecDocClient\Generated\MatchingManufacturersByVINRecordType[] $matchingManufacturers
      */
     private $matchingManufacturers = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MatchingVehicleModelSeriesByVINRecordType[] $matchingModels
+     * @var \Myrzan\TecDocClient\Generated\MatchingVehicleModelSeriesByVINRecordType[] $matchingModels
      */
     private $matchingModels = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MatchingVehicleIdsByVINRecordType[] $matchingVehicles
+     * @var \Myrzan\TecDocClient\Generated\MatchingVehicleIdsByVINRecordType[] $matchingVehicles
      */
     private $matchingVehicles = null;
 
@@ -32,7 +32,7 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
     private $matchingVehiclesCount = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\GetVehiclesByVINDataSourceType[] $dataSource
+     * @var \Myrzan\TecDocClient\Generated\GetVehiclesByVINDataSourceType[] $dataSource
      */
     private $dataSource = [
         
@@ -42,9 +42,9 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\MatchingManufacturersByVINRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\MatchingManufacturersByVINRecordType $array
      */
-    public function addToMatchingManufacturers(\Baumeister\TecDocClient\Generated\MatchingManufacturersByVINRecordType $array)
+    public function addToMatchingManufacturers(\Myrzan\TecDocClient\Generated\MatchingManufacturersByVINRecordType $array)
     {
         $this->matchingManufacturers[] = $array;
         return $this;
@@ -75,7 +75,7 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
     /**
      * Gets as matchingManufacturers
      *
-     * @return \Baumeister\TecDocClient\Generated\MatchingManufacturersByVINRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\MatchingManufacturersByVINRecordType[]
      */
     public function getMatchingManufacturers()
     {
@@ -85,7 +85,7 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
     /**
      * Sets a new matchingManufacturers
      *
-     * @param \Baumeister\TecDocClient\Generated\MatchingManufacturersByVINRecordType[] $matchingManufacturers
+     * @param \Myrzan\TecDocClient\Generated\MatchingManufacturersByVINRecordType[] $matchingManufacturers
      * @return self
      */
     public function setMatchingManufacturers(array $matchingManufacturers)
@@ -98,9 +98,9 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\MatchingVehicleModelSeriesByVINRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\MatchingVehicleModelSeriesByVINRecordType $array
      */
-    public function addToMatchingModels(\Baumeister\TecDocClient\Generated\MatchingVehicleModelSeriesByVINRecordType $array)
+    public function addToMatchingModels(\Myrzan\TecDocClient\Generated\MatchingVehicleModelSeriesByVINRecordType $array)
     {
         $this->matchingModels[] = $array;
         return $this;
@@ -131,7 +131,7 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
     /**
      * Gets as matchingModels
      *
-     * @return \Baumeister\TecDocClient\Generated\MatchingVehicleModelSeriesByVINRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\MatchingVehicleModelSeriesByVINRecordType[]
      */
     public function getMatchingModels()
     {
@@ -141,7 +141,7 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
     /**
      * Sets a new matchingModels
      *
-     * @param \Baumeister\TecDocClient\Generated\MatchingVehicleModelSeriesByVINRecordType[] $matchingModels
+     * @param \Myrzan\TecDocClient\Generated\MatchingVehicleModelSeriesByVINRecordType[] $matchingModels
      * @return self
      */
     public function setMatchingModels(array $matchingModels)
@@ -154,9 +154,9 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\MatchingVehicleIdsByVINRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\MatchingVehicleIdsByVINRecordType $array
      */
-    public function addToMatchingVehicles(\Baumeister\TecDocClient\Generated\MatchingVehicleIdsByVINRecordType $array)
+    public function addToMatchingVehicles(\Myrzan\TecDocClient\Generated\MatchingVehicleIdsByVINRecordType $array)
     {
         $this->matchingVehicles[] = $array;
         return $this;
@@ -187,7 +187,7 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
     /**
      * Gets as matchingVehicles
      *
-     * @return \Baumeister\TecDocClient\Generated\MatchingVehicleIdsByVINRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\MatchingVehicleIdsByVINRecordType[]
      */
     public function getMatchingVehicles()
     {
@@ -197,7 +197,7 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
     /**
      * Sets a new matchingVehicles
      *
-     * @param \Baumeister\TecDocClient\Generated\MatchingVehicleIdsByVINRecordType[] $matchingVehicles
+     * @param \Myrzan\TecDocClient\Generated\MatchingVehicleIdsByVINRecordType[] $matchingVehicles
      * @return self
      */
     public function setMatchingVehicles(array $matchingVehicles)
@@ -232,9 +232,9 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
      * Adds as dataSource
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\GetVehiclesByVINDataSourceType $dataSource
+     * @param \Myrzan\TecDocClient\Generated\GetVehiclesByVINDataSourceType $dataSource
      */
-    public function addToDataSource(\Baumeister\TecDocClient\Generated\GetVehiclesByVINDataSourceType $dataSource)
+    public function addToDataSource(\Myrzan\TecDocClient\Generated\GetVehiclesByVINDataSourceType $dataSource)
     {
         $this->dataSource[] = $dataSource;
         return $this;
@@ -265,7 +265,7 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
     /**
      * Gets as dataSource
      *
-     * @return \Baumeister\TecDocClient\Generated\GetVehiclesByVINDataSourceType[]
+     * @return \Myrzan\TecDocClient\Generated\GetVehiclesByVINDataSourceType[]
      */
     public function getDataSource()
     {
@@ -275,7 +275,7 @@ class MatchesByVINRecordType extends MatchesByVINRecordSrcType
     /**
      * Sets a new dataSource
      *
-     * @param \Baumeister\TecDocClient\Generated\GetVehiclesByVINDataSourceType[] $dataSource
+     * @param \Myrzan\TecDocClient\Generated\GetVehiclesByVINDataSourceType[] $dataSource
      * @return self
      */
     public function setDataSource(array $dataSource)

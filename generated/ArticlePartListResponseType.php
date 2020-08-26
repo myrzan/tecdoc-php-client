@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticlePartListResponseType
@@ -12,7 +12,7 @@ class ArticlePartListResponseType extends ArticlePartListResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticlePartListRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\ArticlePartListRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class ArticlePartListResponseType extends ArticlePartListResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticlePartListRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticlePartListRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\ArticlePartListRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\ArticlePartListRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class ArticlePartListResponseType extends ArticlePartListResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticlePartListRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticlePartListRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class ArticlePartListResponseType extends ArticlePartListResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticlePartListRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\ArticlePartListRecordType[] $data
      * @return self
      */
     public function setData(array $data)

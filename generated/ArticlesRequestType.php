@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticlesRequestType
@@ -79,7 +79,7 @@ class ArticlesRequestType extends ArticlesRequestSrcType
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CriteriaFilterType[] $criteriaFilters
+     * @var \Myrzan\TecDocClient\Generated\CriteriaFilterType[] $criteriaFilters
      */
     private $criteriaFilters = [
         
@@ -177,7 +177,7 @@ class ArticlesRequestType extends ArticlesRequestSrcType
     private $linkagesPage = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\SortType[] $sort
+     * @var \Myrzan\TecDocClient\Generated\SortType[] $sort
      */
     private $sort = [
         
@@ -291,7 +291,7 @@ class ArticlesRequestType extends ArticlesRequestSrcType
     /**
      * Options for returning assembly group facets. Defaults to false.
      *
-     * @var \Baumeister\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions
+     * @var \Myrzan\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions
      */
     private $assemblyGroupFacetOptions = null;
 
@@ -713,9 +713,9 @@ class ArticlesRequestType extends ArticlesRequestSrcType
      * Adds as criteriaFilters
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CriteriaFilterType $criteriaFilters
+     * @param \Myrzan\TecDocClient\Generated\CriteriaFilterType $criteriaFilters
      */
-    public function addToCriteriaFilters(\Baumeister\TecDocClient\Generated\CriteriaFilterType $criteriaFilters)
+    public function addToCriteriaFilters(\Myrzan\TecDocClient\Generated\CriteriaFilterType $criteriaFilters)
     {
         $this->criteriaFilters[] = $criteriaFilters;
         return $this;
@@ -746,7 +746,7 @@ class ArticlesRequestType extends ArticlesRequestSrcType
     /**
      * Gets as criteriaFilters
      *
-     * @return \Baumeister\TecDocClient\Generated\CriteriaFilterType[]
+     * @return \Myrzan\TecDocClient\Generated\CriteriaFilterType[]
      */
     public function getCriteriaFilters()
     {
@@ -756,7 +756,7 @@ class ArticlesRequestType extends ArticlesRequestSrcType
     /**
      * Sets a new criteriaFilters
      *
-     * @param \Baumeister\TecDocClient\Generated\CriteriaFilterType[] $criteriaFilters
+     * @param \Myrzan\TecDocClient\Generated\CriteriaFilterType[] $criteriaFilters
      * @return self
      */
     public function setCriteriaFilters(array $criteriaFilters)
@@ -1107,9 +1107,9 @@ class ArticlesRequestType extends ArticlesRequestSrcType
      * Adds as sort
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\SortType $sort
+     * @param \Myrzan\TecDocClient\Generated\SortType $sort
      */
-    public function addToSort(\Baumeister\TecDocClient\Generated\SortType $sort)
+    public function addToSort(\Myrzan\TecDocClient\Generated\SortType $sort)
     {
         $this->sort[] = $sort;
         return $this;
@@ -1140,7 +1140,7 @@ class ArticlesRequestType extends ArticlesRequestSrcType
     /**
      * Gets as sort
      *
-     * @return \Baumeister\TecDocClient\Generated\SortType[]
+     * @return \Myrzan\TecDocClient\Generated\SortType[]
      */
     public function getSort()
     {
@@ -1150,7 +1150,7 @@ class ArticlesRequestType extends ArticlesRequestSrcType
     /**
      * Sets a new sort
      *
-     * @param \Baumeister\TecDocClient\Generated\SortType[] $sort
+     * @param \Myrzan\TecDocClient\Generated\SortType[] $sort
      * @return self
      */
     public function setSort(array $sort)
@@ -1554,7 +1554,7 @@ class ArticlesRequestType extends ArticlesRequestSrcType
      *
      * Options for returning assembly group facets. Defaults to false.
      *
-     * @return \Baumeister\TecDocClient\Generated\AssemblyGroupFacetOptionsType
+     * @return \Myrzan\TecDocClient\Generated\AssemblyGroupFacetOptionsType
      */
     public function getAssemblyGroupFacetOptions()
     {
@@ -1566,10 +1566,10 @@ class ArticlesRequestType extends ArticlesRequestSrcType
      *
      * Options for returning assembly group facets. Defaults to false.
      *
-     * @param \Baumeister\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions
+     * @param \Myrzan\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions
      * @return self
      */
-    public function setAssemblyGroupFacetOptions(\Baumeister\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions)
+    public function setAssemblyGroupFacetOptions(\Myrzan\TecDocClient\Generated\AssemblyGroupFacetOptionsType $assemblyGroupFacetOptions)
     {
         $this->assemblyGroupFacetOptions = $assemblyGroupFacetOptions;
         return $this;

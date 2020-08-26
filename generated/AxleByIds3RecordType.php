@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing AxleByIds3RecordType
@@ -12,7 +12,7 @@ class AxleByIds3RecordType extends AxleByIds3RecordSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AxleDetailsById2RecordType $axleDetails2
+     * @var \Myrzan\TecDocClient\Generated\AxleDetailsById2RecordType $axleDetails2
      */
     private $axleDetails2 = null;
 
@@ -22,14 +22,14 @@ class AxleByIds3RecordType extends AxleByIds3RecordSrcType
     private $axleId = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AxleKeyNumbersRecordType[] $bodyType
+     * @var \Myrzan\TecDocClient\Generated\AxleKeyNumbersRecordType[] $bodyType
      */
     private $bodyType = null;
 
     /**
      * Gets as axleDetails2
      *
-     * @return \Baumeister\TecDocClient\Generated\AxleDetailsById2RecordType
+     * @return \Myrzan\TecDocClient\Generated\AxleDetailsById2RecordType
      */
     public function getAxleDetails2()
     {
@@ -39,10 +39,10 @@ class AxleByIds3RecordType extends AxleByIds3RecordSrcType
     /**
      * Sets a new axleDetails2
      *
-     * @param \Baumeister\TecDocClient\Generated\AxleDetailsById2RecordType $axleDetails2
+     * @param \Myrzan\TecDocClient\Generated\AxleDetailsById2RecordType $axleDetails2
      * @return self
      */
-    public function setAxleDetails2(\Baumeister\TecDocClient\Generated\AxleDetailsById2RecordType $axleDetails2)
+    public function setAxleDetails2(\Myrzan\TecDocClient\Generated\AxleDetailsById2RecordType $axleDetails2)
     {
         $this->axleDetails2 = $axleDetails2;
         return $this;
@@ -74,9 +74,9 @@ class AxleByIds3RecordType extends AxleByIds3RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AxleKeyNumbersRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\AxleKeyNumbersRecordType $array
      */
-    public function addToBodyType(\Baumeister\TecDocClient\Generated\AxleKeyNumbersRecordType $array)
+    public function addToBodyType(\Myrzan\TecDocClient\Generated\AxleKeyNumbersRecordType $array)
     {
         $this->bodyType[] = $array;
         return $this;
@@ -107,7 +107,7 @@ class AxleByIds3RecordType extends AxleByIds3RecordSrcType
     /**
      * Gets as bodyType
      *
-     * @return \Baumeister\TecDocClient\Generated\AxleKeyNumbersRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\AxleKeyNumbersRecordType[]
      */
     public function getBodyType()
     {
@@ -117,7 +117,7 @@ class AxleByIds3RecordType extends AxleByIds3RecordSrcType
     /**
      * Sets a new bodyType
      *
-     * @param \Baumeister\TecDocClient\Generated\AxleKeyNumbersRecordType[] $bodyType
+     * @param \Myrzan\TecDocClient\Generated\AxleKeyNumbersRecordType[] $bodyType
      * @return self
      */
     public function setBodyType(array $bodyType)

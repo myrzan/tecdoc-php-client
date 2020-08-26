@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing AssemblyGroupFacetCountsType
@@ -19,7 +19,7 @@ class AssemblyGroupFacetCountsType
     private $total = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountType[] $counts
+     * @var \Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountType[] $counts
      */
     private $counts = [
         
@@ -55,9 +55,9 @@ class AssemblyGroupFacetCountsType
      * Adds as counts
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountType $counts
+     * @param \Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountType $counts
      */
-    public function addToCounts(\Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountType $counts)
+    public function addToCounts(\Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountType $counts)
     {
         $this->counts[] = $counts;
         return $this;
@@ -88,7 +88,7 @@ class AssemblyGroupFacetCountsType
     /**
      * Gets as counts
      *
-     * @return \Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountType[]
+     * @return \Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountType[]
      */
     public function getCounts()
     {
@@ -98,7 +98,7 @@ class AssemblyGroupFacetCountsType
     /**
      * Sets a new counts
      *
-     * @param \Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountType[] $counts
+     * @param \Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountType[] $counts
      * @return self
      */
     public function setCounts(array $counts)

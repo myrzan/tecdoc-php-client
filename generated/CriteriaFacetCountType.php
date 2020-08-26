@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing CriteriaFacetCountType
@@ -12,12 +12,12 @@ class CriteriaFacetCountType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CriteriaInfoType $criteria
+     * @var \Myrzan\TecDocClient\Generated\CriteriaInfoType $criteria
      */
     private $criteria = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CriteriaValueCountsType[] $criteriaValueCounts
+     * @var \Myrzan\TecDocClient\Generated\CriteriaValueCountsType[] $criteriaValueCounts
      */
     private $criteriaValueCounts = [
         
@@ -26,7 +26,7 @@ class CriteriaFacetCountType
     /**
      * Gets as criteria
      *
-     * @return \Baumeister\TecDocClient\Generated\CriteriaInfoType
+     * @return \Myrzan\TecDocClient\Generated\CriteriaInfoType
      */
     public function getCriteria()
     {
@@ -36,10 +36,10 @@ class CriteriaFacetCountType
     /**
      * Sets a new criteria
      *
-     * @param \Baumeister\TecDocClient\Generated\CriteriaInfoType $criteria
+     * @param \Myrzan\TecDocClient\Generated\CriteriaInfoType $criteria
      * @return self
      */
-    public function setCriteria(\Baumeister\TecDocClient\Generated\CriteriaInfoType $criteria)
+    public function setCriteria(\Myrzan\TecDocClient\Generated\CriteriaInfoType $criteria)
     {
         $this->criteria = $criteria;
         return $this;
@@ -49,9 +49,9 @@ class CriteriaFacetCountType
      * Adds as criteriaValueCounts
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CriteriaValueCountsType $criteriaValueCounts
+     * @param \Myrzan\TecDocClient\Generated\CriteriaValueCountsType $criteriaValueCounts
      */
-    public function addToCriteriaValueCounts(\Baumeister\TecDocClient\Generated\CriteriaValueCountsType $criteriaValueCounts)
+    public function addToCriteriaValueCounts(\Myrzan\TecDocClient\Generated\CriteriaValueCountsType $criteriaValueCounts)
     {
         $this->criteriaValueCounts[] = $criteriaValueCounts;
         return $this;
@@ -82,7 +82,7 @@ class CriteriaFacetCountType
     /**
      * Gets as criteriaValueCounts
      *
-     * @return \Baumeister\TecDocClient\Generated\CriteriaValueCountsType[]
+     * @return \Myrzan\TecDocClient\Generated\CriteriaValueCountsType[]
      */
     public function getCriteriaValueCounts()
     {
@@ -92,7 +92,7 @@ class CriteriaFacetCountType
     /**
      * Sets a new criteriaValueCounts
      *
-     * @param \Baumeister\TecDocClient\Generated\CriteriaValueCountsType[] $criteriaValueCounts
+     * @param \Myrzan\TecDocClient\Generated\CriteriaValueCountsType[] $criteriaValueCounts
      * @return self
      */
     public function setCriteriaValueCounts(array $criteriaValueCounts)

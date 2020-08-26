@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleLinkedAllLinkingTarget4RecordType
@@ -12,12 +12,12 @@ class ArticleLinkedAllLinkingTarget4RecordType extends ArticleLinkedAllLinkingTa
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetDetailsRecordType[] $articleLinkages
+     * @var \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetDetailsRecordType[] $articleLinkages
      */
     private $articleLinkages = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MainArticleLinkedVehiclesRecordType[] $mainArticleLinkages
+     * @var \Myrzan\TecDocClient\Generated\MainArticleLinkedVehiclesRecordType[] $mainArticleLinkages
      */
     private $mainArticleLinkages = null;
 
@@ -25,9 +25,9 @@ class ArticleLinkedAllLinkingTarget4RecordType extends ArticleLinkedAllLinkingTa
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetDetailsRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetDetailsRecordType $array
      */
-    public function addToArticleLinkages(\Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetDetailsRecordType $array)
+    public function addToArticleLinkages(\Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetDetailsRecordType $array)
     {
         $this->articleLinkages[] = $array;
         return $this;
@@ -58,7 +58,7 @@ class ArticleLinkedAllLinkingTarget4RecordType extends ArticleLinkedAllLinkingTa
     /**
      * Gets as articleLinkages
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetDetailsRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetDetailsRecordType[]
      */
     public function getArticleLinkages()
     {
@@ -68,7 +68,7 @@ class ArticleLinkedAllLinkingTarget4RecordType extends ArticleLinkedAllLinkingTa
     /**
      * Sets a new articleLinkages
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetDetailsRecordType[] $articleLinkages
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetDetailsRecordType[] $articleLinkages
      * @return self
      */
     public function setArticleLinkages(array $articleLinkages)
@@ -81,9 +81,9 @@ class ArticleLinkedAllLinkingTarget4RecordType extends ArticleLinkedAllLinkingTa
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\MainArticleLinkedVehiclesRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\MainArticleLinkedVehiclesRecordType $array
      */
-    public function addToMainArticleLinkages(\Baumeister\TecDocClient\Generated\MainArticleLinkedVehiclesRecordType $array)
+    public function addToMainArticleLinkages(\Myrzan\TecDocClient\Generated\MainArticleLinkedVehiclesRecordType $array)
     {
         $this->mainArticleLinkages[] = $array;
         return $this;
@@ -114,7 +114,7 @@ class ArticleLinkedAllLinkingTarget4RecordType extends ArticleLinkedAllLinkingTa
     /**
      * Gets as mainArticleLinkages
      *
-     * @return \Baumeister\TecDocClient\Generated\MainArticleLinkedVehiclesRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\MainArticleLinkedVehiclesRecordType[]
      */
     public function getMainArticleLinkages()
     {
@@ -124,7 +124,7 @@ class ArticleLinkedAllLinkingTarget4RecordType extends ArticleLinkedAllLinkingTa
     /**
      * Sets a new mainArticleLinkages
      *
-     * @param \Baumeister\TecDocClient\Generated\MainArticleLinkedVehiclesRecordType[] $mainArticleLinkages
+     * @param \Myrzan\TecDocClient\Generated\MainArticleLinkedVehiclesRecordType[] $mainArticleLinkages
      * @return self
      */
     public function setMainArticleLinkages(array $mainArticleLinkages)

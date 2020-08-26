@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing OEArticleRecordType
@@ -46,21 +46,21 @@ class OEArticleRecordType
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CriteriaRecordType[] $tecDocCriteria
+     * @var \Myrzan\TecDocClient\Generated\CriteriaRecordType[] $tecDocCriteria
      */
     private $tecDocCriteria = [
         
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\OEAttributeRecordType[] $oeAttributes
+     * @var \Myrzan\TecDocClient\Generated\OEAttributeRecordType[] $oeAttributes
      */
     private $oeAttributes = [
         
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleRefRecordType[] $matchingAftermarketArticles
+     * @var \Myrzan\TecDocClient\Generated\ArticleRefRecordType[] $matchingAftermarketArticles
      */
     private $matchingAftermarketArticles = [
         
@@ -246,9 +246,9 @@ class OEArticleRecordType
      * Adds as tecDocCriteria
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CriteriaRecordType $tecDocCriteria
+     * @param \Myrzan\TecDocClient\Generated\CriteriaRecordType $tecDocCriteria
      */
-    public function addToTecDocCriteria(\Baumeister\TecDocClient\Generated\CriteriaRecordType $tecDocCriteria)
+    public function addToTecDocCriteria(\Myrzan\TecDocClient\Generated\CriteriaRecordType $tecDocCriteria)
     {
         $this->tecDocCriteria[] = $tecDocCriteria;
         return $this;
@@ -279,7 +279,7 @@ class OEArticleRecordType
     /**
      * Gets as tecDocCriteria
      *
-     * @return \Baumeister\TecDocClient\Generated\CriteriaRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\CriteriaRecordType[]
      */
     public function getTecDocCriteria()
     {
@@ -289,7 +289,7 @@ class OEArticleRecordType
     /**
      * Sets a new tecDocCriteria
      *
-     * @param \Baumeister\TecDocClient\Generated\CriteriaRecordType[] $tecDocCriteria
+     * @param \Myrzan\TecDocClient\Generated\CriteriaRecordType[] $tecDocCriteria
      * @return self
      */
     public function setTecDocCriteria(array $tecDocCriteria)
@@ -302,9 +302,9 @@ class OEArticleRecordType
      * Adds as oeAttributes
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\OEAttributeRecordType $oeAttributes
+     * @param \Myrzan\TecDocClient\Generated\OEAttributeRecordType $oeAttributes
      */
-    public function addToOeAttributes(\Baumeister\TecDocClient\Generated\OEAttributeRecordType $oeAttributes)
+    public function addToOeAttributes(\Myrzan\TecDocClient\Generated\OEAttributeRecordType $oeAttributes)
     {
         $this->oeAttributes[] = $oeAttributes;
         return $this;
@@ -335,7 +335,7 @@ class OEArticleRecordType
     /**
      * Gets as oeAttributes
      *
-     * @return \Baumeister\TecDocClient\Generated\OEAttributeRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\OEAttributeRecordType[]
      */
     public function getOeAttributes()
     {
@@ -345,7 +345,7 @@ class OEArticleRecordType
     /**
      * Sets a new oeAttributes
      *
-     * @param \Baumeister\TecDocClient\Generated\OEAttributeRecordType[] $oeAttributes
+     * @param \Myrzan\TecDocClient\Generated\OEAttributeRecordType[] $oeAttributes
      * @return self
      */
     public function setOeAttributes(array $oeAttributes)
@@ -358,9 +358,9 @@ class OEArticleRecordType
      * Adds as matchingAftermarketArticles
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleRefRecordType $matchingAftermarketArticles
+     * @param \Myrzan\TecDocClient\Generated\ArticleRefRecordType $matchingAftermarketArticles
      */
-    public function addToMatchingAftermarketArticles(\Baumeister\TecDocClient\Generated\ArticleRefRecordType $matchingAftermarketArticles)
+    public function addToMatchingAftermarketArticles(\Myrzan\TecDocClient\Generated\ArticleRefRecordType $matchingAftermarketArticles)
     {
         $this->matchingAftermarketArticles[] = $matchingAftermarketArticles;
         return $this;
@@ -391,7 +391,7 @@ class OEArticleRecordType
     /**
      * Gets as matchingAftermarketArticles
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleRefRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleRefRecordType[]
      */
     public function getMatchingAftermarketArticles()
     {
@@ -401,7 +401,7 @@ class OEArticleRecordType
     /**
      * Sets a new matchingAftermarketArticles
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleRefRecordType[] $matchingAftermarketArticles
+     * @param \Myrzan\TecDocClient\Generated\ArticleRefRecordType[] $matchingAftermarketArticles
      * @return self
      */
     public function setMatchingAftermarketArticles(array $matchingAftermarketArticles)

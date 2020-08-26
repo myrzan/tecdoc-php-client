@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing VehicleIdsByKeyNumberPlates3ResponseType
@@ -12,7 +12,7 @@ class VehicleIdsByKeyNumberPlates3ResponseType extends VehicleIdsByKeyNumberPlat
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\VehicleIdsByKeyNumberPlates3RecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\VehicleIdsByKeyNumberPlates3RecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class VehicleIdsByKeyNumberPlates3ResponseType extends VehicleIdsByKeyNumberPlat
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\VehicleIdsByKeyNumberPlates3RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\VehicleIdsByKeyNumberPlates3RecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\VehicleIdsByKeyNumberPlates3RecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\VehicleIdsByKeyNumberPlates3RecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class VehicleIdsByKeyNumberPlates3ResponseType extends VehicleIdsByKeyNumberPlat
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\VehicleIdsByKeyNumberPlates3RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\VehicleIdsByKeyNumberPlates3RecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class VehicleIdsByKeyNumberPlates3ResponseType extends VehicleIdsByKeyNumberPlat
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\VehicleIdsByKeyNumberPlates3RecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\VehicleIdsByKeyNumberPlates3RecordType[] $data
      * @return self
      */
     public function setData(array $data)

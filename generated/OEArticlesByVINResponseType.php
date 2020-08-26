@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing OEArticlesByVINResponseType
@@ -19,24 +19,24 @@ class OEArticlesByVINResponseType extends OEArticlesByVINResponseSrcType
     private $totalMatchingOEArticles = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\OEArticleRecordType[] $oeArticles
+     * @var \Myrzan\TecDocClient\Generated\OEArticleRecordType[] $oeArticles
      */
     private $oeArticles = [
         
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\DataSupplierFacetCountsType $aftermarketDataSupplierFacets
+     * @var \Myrzan\TecDocClient\Generated\DataSupplierFacetCountsType $aftermarketDataSupplierFacets
      */
     private $aftermarketDataSupplierFacets = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets
+     * @var \Myrzan\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets
      */
     private $genericArticleFacets = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets
+     * @var \Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets
      */
     private $assemblyGroupFacets = null;
 
@@ -80,9 +80,9 @@ class OEArticlesByVINResponseType extends OEArticlesByVINResponseSrcType
      * Adds as oeArticles
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\OEArticleRecordType $oeArticles
+     * @param \Myrzan\TecDocClient\Generated\OEArticleRecordType $oeArticles
      */
-    public function addToOeArticles(\Baumeister\TecDocClient\Generated\OEArticleRecordType $oeArticles)
+    public function addToOeArticles(\Myrzan\TecDocClient\Generated\OEArticleRecordType $oeArticles)
     {
         $this->oeArticles[] = $oeArticles;
         return $this;
@@ -113,7 +113,7 @@ class OEArticlesByVINResponseType extends OEArticlesByVINResponseSrcType
     /**
      * Gets as oeArticles
      *
-     * @return \Baumeister\TecDocClient\Generated\OEArticleRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\OEArticleRecordType[]
      */
     public function getOeArticles()
     {
@@ -123,7 +123,7 @@ class OEArticlesByVINResponseType extends OEArticlesByVINResponseSrcType
     /**
      * Sets a new oeArticles
      *
-     * @param \Baumeister\TecDocClient\Generated\OEArticleRecordType[] $oeArticles
+     * @param \Myrzan\TecDocClient\Generated\OEArticleRecordType[] $oeArticles
      * @return self
      */
     public function setOeArticles(array $oeArticles)
@@ -135,7 +135,7 @@ class OEArticlesByVINResponseType extends OEArticlesByVINResponseSrcType
     /**
      * Gets as aftermarketDataSupplierFacets
      *
-     * @return \Baumeister\TecDocClient\Generated\DataSupplierFacetCountsType
+     * @return \Myrzan\TecDocClient\Generated\DataSupplierFacetCountsType
      */
     public function getAftermarketDataSupplierFacets()
     {
@@ -145,10 +145,10 @@ class OEArticlesByVINResponseType extends OEArticlesByVINResponseSrcType
     /**
      * Sets a new aftermarketDataSupplierFacets
      *
-     * @param \Baumeister\TecDocClient\Generated\DataSupplierFacetCountsType $aftermarketDataSupplierFacets
+     * @param \Myrzan\TecDocClient\Generated\DataSupplierFacetCountsType $aftermarketDataSupplierFacets
      * @return self
      */
-    public function setAftermarketDataSupplierFacets(\Baumeister\TecDocClient\Generated\DataSupplierFacetCountsType $aftermarketDataSupplierFacets)
+    public function setAftermarketDataSupplierFacets(\Myrzan\TecDocClient\Generated\DataSupplierFacetCountsType $aftermarketDataSupplierFacets)
     {
         $this->aftermarketDataSupplierFacets = $aftermarketDataSupplierFacets;
         return $this;
@@ -157,7 +157,7 @@ class OEArticlesByVINResponseType extends OEArticlesByVINResponseSrcType
     /**
      * Gets as genericArticleFacets
      *
-     * @return \Baumeister\TecDocClient\Generated\GenericArticleFacetCountsType
+     * @return \Myrzan\TecDocClient\Generated\GenericArticleFacetCountsType
      */
     public function getGenericArticleFacets()
     {
@@ -167,10 +167,10 @@ class OEArticlesByVINResponseType extends OEArticlesByVINResponseSrcType
     /**
      * Sets a new genericArticleFacets
      *
-     * @param \Baumeister\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets
+     * @param \Myrzan\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets
      * @return self
      */
-    public function setGenericArticleFacets(\Baumeister\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets)
+    public function setGenericArticleFacets(\Myrzan\TecDocClient\Generated\GenericArticleFacetCountsType $genericArticleFacets)
     {
         $this->genericArticleFacets = $genericArticleFacets;
         return $this;
@@ -179,7 +179,7 @@ class OEArticlesByVINResponseType extends OEArticlesByVINResponseSrcType
     /**
      * Gets as assemblyGroupFacets
      *
-     * @return \Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountsType
+     * @return \Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountsType
      */
     public function getAssemblyGroupFacets()
     {
@@ -189,10 +189,10 @@ class OEArticlesByVINResponseType extends OEArticlesByVINResponseSrcType
     /**
      * Sets a new assemblyGroupFacets
      *
-     * @param \Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets
+     * @param \Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets
      * @return self
      */
-    public function setAssemblyGroupFacets(\Baumeister\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets)
+    public function setAssemblyGroupFacets(\Myrzan\TecDocClient\Generated\AssemblyGroupFacetCountsType $assemblyGroupFacets)
     {
         $this->assemblyGroupFacets = $assemblyGroupFacets;
         return $this;

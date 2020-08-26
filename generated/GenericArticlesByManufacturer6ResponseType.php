@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing GenericArticlesByManufacturer6ResponseType
@@ -12,7 +12,7 @@ class GenericArticlesByManufacturer6ResponseType extends GenericArticlesByManufa
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\GenericArticlesByManufacturer6RecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\GenericArticlesByManufacturer6RecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class GenericArticlesByManufacturer6ResponseType extends GenericArticlesByManufa
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\GenericArticlesByManufacturer6RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\GenericArticlesByManufacturer6RecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\GenericArticlesByManufacturer6RecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\GenericArticlesByManufacturer6RecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class GenericArticlesByManufacturer6ResponseType extends GenericArticlesByManufa
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\GenericArticlesByManufacturer6RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\GenericArticlesByManufacturer6RecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class GenericArticlesByManufacturer6ResponseType extends GenericArticlesByManufa
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\GenericArticlesByManufacturer6RecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\GenericArticlesByManufacturer6RecordType[] $data
      * @return self
      */
     public function setData(array $data)

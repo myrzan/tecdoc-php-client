@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticlePartList3RecordType
@@ -12,12 +12,12 @@ class ArticlePartList3RecordType extends ArticlePartList3RecordSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticlePartListAttributsRecordType[] $partlistAttributs
+     * @var \Myrzan\TecDocClient\Generated\ArticlePartListAttributsRecordType[] $partlistAttributs
      */
     private $partlistAttributs = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticlePartList2RecordType $partlistDetails
+     * @var \Myrzan\TecDocClient\Generated\ArticlePartList2RecordType $partlistDetails
      */
     private $partlistDetails = null;
 
@@ -25,9 +25,9 @@ class ArticlePartList3RecordType extends ArticlePartList3RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticlePartListAttributsRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticlePartListAttributsRecordType $array
      */
-    public function addToPartlistAttributs(\Baumeister\TecDocClient\Generated\ArticlePartListAttributsRecordType $array)
+    public function addToPartlistAttributs(\Myrzan\TecDocClient\Generated\ArticlePartListAttributsRecordType $array)
     {
         $this->partlistAttributs[] = $array;
         return $this;
@@ -58,7 +58,7 @@ class ArticlePartList3RecordType extends ArticlePartList3RecordSrcType
     /**
      * Gets as partlistAttributs
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticlePartListAttributsRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticlePartListAttributsRecordType[]
      */
     public function getPartlistAttributs()
     {
@@ -68,7 +68,7 @@ class ArticlePartList3RecordType extends ArticlePartList3RecordSrcType
     /**
      * Sets a new partlistAttributs
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticlePartListAttributsRecordType[] $partlistAttributs
+     * @param \Myrzan\TecDocClient\Generated\ArticlePartListAttributsRecordType[] $partlistAttributs
      * @return self
      */
     public function setPartlistAttributs(array $partlistAttributs)
@@ -80,7 +80,7 @@ class ArticlePartList3RecordType extends ArticlePartList3RecordSrcType
     /**
      * Gets as partlistDetails
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticlePartList2RecordType
+     * @return \Myrzan\TecDocClient\Generated\ArticlePartList2RecordType
      */
     public function getPartlistDetails()
     {
@@ -90,10 +90,10 @@ class ArticlePartList3RecordType extends ArticlePartList3RecordSrcType
     /**
      * Sets a new partlistDetails
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticlePartList2RecordType $partlistDetails
+     * @param \Myrzan\TecDocClient\Generated\ArticlePartList2RecordType $partlistDetails
      * @return self
      */
-    public function setPartlistDetails(\Baumeister\TecDocClient\Generated\ArticlePartList2RecordType $partlistDetails)
+    public function setPartlistDetails(\Myrzan\TecDocClient\Generated\ArticlePartList2RecordType $partlistDetails)
     {
         $this->partlistDetails = $partlistDetails;
         return $this;

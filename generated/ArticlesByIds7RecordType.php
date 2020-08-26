@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticlesByIds7RecordType
@@ -12,82 +12,82 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AssignedArticleAttributs2RecordType[] $articleAttributes
+     * @var \Myrzan\TecDocClient\Generated\AssignedArticleAttributs2RecordType[] $articleAttributes
      */
     private $articleAttributes = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleDocuments2RecordType[] $articleDocuments
+     * @var \Myrzan\TecDocClient\Generated\ArticleDocuments2RecordType[] $articleDocuments
      */
     private $articleDocuments = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AssignedArticleInfosRecordType[] $articleInfo
+     * @var \Myrzan\TecDocClient\Generated\AssignedArticleInfosRecordType[] $articleInfo
      */
     private $articleInfo = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticlePricesRecordType[] $articlePrices
+     * @var \Myrzan\TecDocClient\Generated\ArticlePricesRecordType[] $articlePrices
      */
     private $articlePrices = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ThumbnailByArticleIdRecordType[] $articleThumbnails
+     * @var \Myrzan\TecDocClient\Generated\ThumbnailByArticleIdRecordType[] $articleThumbnails
      */
     private $articleThumbnails = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AssignedArticleById4RecordType $assignedArticle
+     * @var \Myrzan\TecDocClient\Generated\AssignedArticleById4RecordType $assignedArticle
      */
     private $assignedArticle = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleDirectSearchById4RecordType $directArticle
+     * @var \Myrzan\TecDocClient\Generated\ArticleDirectSearchById4RecordType $directArticle
      */
     private $directArticle = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\EanNumbersRecordType[] $eanNumber
+     * @var \Myrzan\TecDocClient\Generated\EanNumbersRecordType[] $eanNumber
      */
     private $eanNumber = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ImmediateAttributs2RecordType[] $immediateAttributs
+     * @var \Myrzan\TecDocClient\Generated\ImmediateAttributs2RecordType[] $immediateAttributs
      */
     private $immediateAttributs = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ImmediateInfosRecordType[] $immediateInfo
+     * @var \Myrzan\TecDocClient\Generated\ImmediateInfosRecordType[] $immediateInfo
      */
     private $immediateInfo = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MainArticlesRecordType[] $mainArticle
+     * @var \Myrzan\TecDocClient\Generated\MainArticlesRecordType[] $mainArticle
      */
     private $mainArticle = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticlePricesNormalAustauschRecordType[] $normalAustauschPrice
+     * @var \Myrzan\TecDocClient\Generated\ArticlePricesNormalAustauschRecordType[] $normalAustauschPrice
      */
     private $normalAustauschPrice = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleOENumbersRecordType[] $oenNumbers
+     * @var \Myrzan\TecDocClient\Generated\ArticleOENumbersRecordType[] $oenNumbers
      */
     private $oenNumbers = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ReplacedByNumbersRecordType[] $replacedByNumber
+     * @var \Myrzan\TecDocClient\Generated\ReplacedByNumbersRecordType[] $replacedByNumber
      */
     private $replacedByNumber = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ReplacedNumbersRecordType[] $replacedNumber
+     * @var \Myrzan\TecDocClient\Generated\ReplacedNumbersRecordType[] $replacedNumber
      */
     private $replacedNumber = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\UsageNumbers2RecordType[] $usageNumbers2
+     * @var \Myrzan\TecDocClient\Generated\UsageNumbers2RecordType[] $usageNumbers2
      */
     private $usageNumbers2 = null;
 
@@ -95,9 +95,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AssignedArticleAttributs2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\AssignedArticleAttributs2RecordType $array
      */
-    public function addToArticleAttributes(\Baumeister\TecDocClient\Generated\AssignedArticleAttributs2RecordType $array)
+    public function addToArticleAttributes(\Myrzan\TecDocClient\Generated\AssignedArticleAttributs2RecordType $array)
     {
         $this->articleAttributes[] = $array;
         return $this;
@@ -128,7 +128,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as articleAttributes
      *
-     * @return \Baumeister\TecDocClient\Generated\AssignedArticleAttributs2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\AssignedArticleAttributs2RecordType[]
      */
     public function getArticleAttributes()
     {
@@ -138,7 +138,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new articleAttributes
      *
-     * @param \Baumeister\TecDocClient\Generated\AssignedArticleAttributs2RecordType[] $articleAttributes
+     * @param \Myrzan\TecDocClient\Generated\AssignedArticleAttributs2RecordType[] $articleAttributes
      * @return self
      */
     public function setArticleAttributes(array $articleAttributes)
@@ -151,9 +151,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleDocuments2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleDocuments2RecordType $array
      */
-    public function addToArticleDocuments(\Baumeister\TecDocClient\Generated\ArticleDocuments2RecordType $array)
+    public function addToArticleDocuments(\Myrzan\TecDocClient\Generated\ArticleDocuments2RecordType $array)
     {
         $this->articleDocuments[] = $array;
         return $this;
@@ -184,7 +184,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as articleDocuments
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleDocuments2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleDocuments2RecordType[]
      */
     public function getArticleDocuments()
     {
@@ -194,7 +194,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new articleDocuments
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleDocuments2RecordType[] $articleDocuments
+     * @param \Myrzan\TecDocClient\Generated\ArticleDocuments2RecordType[] $articleDocuments
      * @return self
      */
     public function setArticleDocuments(array $articleDocuments)
@@ -207,9 +207,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AssignedArticleInfosRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\AssignedArticleInfosRecordType $array
      */
-    public function addToArticleInfo(\Baumeister\TecDocClient\Generated\AssignedArticleInfosRecordType $array)
+    public function addToArticleInfo(\Myrzan\TecDocClient\Generated\AssignedArticleInfosRecordType $array)
     {
         $this->articleInfo[] = $array;
         return $this;
@@ -240,7 +240,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as articleInfo
      *
-     * @return \Baumeister\TecDocClient\Generated\AssignedArticleInfosRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\AssignedArticleInfosRecordType[]
      */
     public function getArticleInfo()
     {
@@ -250,7 +250,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new articleInfo
      *
-     * @param \Baumeister\TecDocClient\Generated\AssignedArticleInfosRecordType[] $articleInfo
+     * @param \Myrzan\TecDocClient\Generated\AssignedArticleInfosRecordType[] $articleInfo
      * @return self
      */
     public function setArticleInfo(array $articleInfo)
@@ -263,9 +263,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticlePricesRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticlePricesRecordType $array
      */
-    public function addToArticlePrices(\Baumeister\TecDocClient\Generated\ArticlePricesRecordType $array)
+    public function addToArticlePrices(\Myrzan\TecDocClient\Generated\ArticlePricesRecordType $array)
     {
         $this->articlePrices[] = $array;
         return $this;
@@ -296,7 +296,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as articlePrices
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticlePricesRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticlePricesRecordType[]
      */
     public function getArticlePrices()
     {
@@ -306,7 +306,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new articlePrices
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticlePricesRecordType[] $articlePrices
+     * @param \Myrzan\TecDocClient\Generated\ArticlePricesRecordType[] $articlePrices
      * @return self
      */
     public function setArticlePrices(array $articlePrices)
@@ -319,9 +319,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ThumbnailByArticleIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ThumbnailByArticleIdRecordType $array
      */
-    public function addToArticleThumbnails(\Baumeister\TecDocClient\Generated\ThumbnailByArticleIdRecordType $array)
+    public function addToArticleThumbnails(\Myrzan\TecDocClient\Generated\ThumbnailByArticleIdRecordType $array)
     {
         $this->articleThumbnails[] = $array;
         return $this;
@@ -352,7 +352,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as articleThumbnails
      *
-     * @return \Baumeister\TecDocClient\Generated\ThumbnailByArticleIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ThumbnailByArticleIdRecordType[]
      */
     public function getArticleThumbnails()
     {
@@ -362,7 +362,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new articleThumbnails
      *
-     * @param \Baumeister\TecDocClient\Generated\ThumbnailByArticleIdRecordType[] $articleThumbnails
+     * @param \Myrzan\TecDocClient\Generated\ThumbnailByArticleIdRecordType[] $articleThumbnails
      * @return self
      */
     public function setArticleThumbnails(array $articleThumbnails)
@@ -374,7 +374,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as assignedArticle
      *
-     * @return \Baumeister\TecDocClient\Generated\AssignedArticleById4RecordType
+     * @return \Myrzan\TecDocClient\Generated\AssignedArticleById4RecordType
      */
     public function getAssignedArticle()
     {
@@ -384,10 +384,10 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new assignedArticle
      *
-     * @param \Baumeister\TecDocClient\Generated\AssignedArticleById4RecordType $assignedArticle
+     * @param \Myrzan\TecDocClient\Generated\AssignedArticleById4RecordType $assignedArticle
      * @return self
      */
-    public function setAssignedArticle(\Baumeister\TecDocClient\Generated\AssignedArticleById4RecordType $assignedArticle)
+    public function setAssignedArticle(\Myrzan\TecDocClient\Generated\AssignedArticleById4RecordType $assignedArticle)
     {
         $this->assignedArticle = $assignedArticle;
         return $this;
@@ -396,7 +396,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as directArticle
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleDirectSearchById4RecordType
+     * @return \Myrzan\TecDocClient\Generated\ArticleDirectSearchById4RecordType
      */
     public function getDirectArticle()
     {
@@ -406,10 +406,10 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new directArticle
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleDirectSearchById4RecordType $directArticle
+     * @param \Myrzan\TecDocClient\Generated\ArticleDirectSearchById4RecordType $directArticle
      * @return self
      */
-    public function setDirectArticle(\Baumeister\TecDocClient\Generated\ArticleDirectSearchById4RecordType $directArticle)
+    public function setDirectArticle(\Myrzan\TecDocClient\Generated\ArticleDirectSearchById4RecordType $directArticle)
     {
         $this->directArticle = $directArticle;
         return $this;
@@ -419,9 +419,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\EanNumbersRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\EanNumbersRecordType $array
      */
-    public function addToEanNumber(\Baumeister\TecDocClient\Generated\EanNumbersRecordType $array)
+    public function addToEanNumber(\Myrzan\TecDocClient\Generated\EanNumbersRecordType $array)
     {
         $this->eanNumber[] = $array;
         return $this;
@@ -452,7 +452,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as eanNumber
      *
-     * @return \Baumeister\TecDocClient\Generated\EanNumbersRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\EanNumbersRecordType[]
      */
     public function getEanNumber()
     {
@@ -462,7 +462,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new eanNumber
      *
-     * @param \Baumeister\TecDocClient\Generated\EanNumbersRecordType[] $eanNumber
+     * @param \Myrzan\TecDocClient\Generated\EanNumbersRecordType[] $eanNumber
      * @return self
      */
     public function setEanNumber(array $eanNumber)
@@ -475,9 +475,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ImmediateAttributs2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ImmediateAttributs2RecordType $array
      */
-    public function addToImmediateAttributs(\Baumeister\TecDocClient\Generated\ImmediateAttributs2RecordType $array)
+    public function addToImmediateAttributs(\Myrzan\TecDocClient\Generated\ImmediateAttributs2RecordType $array)
     {
         $this->immediateAttributs[] = $array;
         return $this;
@@ -508,7 +508,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as immediateAttributs
      *
-     * @return \Baumeister\TecDocClient\Generated\ImmediateAttributs2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ImmediateAttributs2RecordType[]
      */
     public function getImmediateAttributs()
     {
@@ -518,7 +518,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new immediateAttributs
      *
-     * @param \Baumeister\TecDocClient\Generated\ImmediateAttributs2RecordType[] $immediateAttributs
+     * @param \Myrzan\TecDocClient\Generated\ImmediateAttributs2RecordType[] $immediateAttributs
      * @return self
      */
     public function setImmediateAttributs(array $immediateAttributs)
@@ -531,9 +531,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ImmediateInfosRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ImmediateInfosRecordType $array
      */
-    public function addToImmediateInfo(\Baumeister\TecDocClient\Generated\ImmediateInfosRecordType $array)
+    public function addToImmediateInfo(\Myrzan\TecDocClient\Generated\ImmediateInfosRecordType $array)
     {
         $this->immediateInfo[] = $array;
         return $this;
@@ -564,7 +564,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as immediateInfo
      *
-     * @return \Baumeister\TecDocClient\Generated\ImmediateInfosRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ImmediateInfosRecordType[]
      */
     public function getImmediateInfo()
     {
@@ -574,7 +574,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new immediateInfo
      *
-     * @param \Baumeister\TecDocClient\Generated\ImmediateInfosRecordType[] $immediateInfo
+     * @param \Myrzan\TecDocClient\Generated\ImmediateInfosRecordType[] $immediateInfo
      * @return self
      */
     public function setImmediateInfo(array $immediateInfo)
@@ -587,9 +587,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\MainArticlesRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\MainArticlesRecordType $array
      */
-    public function addToMainArticle(\Baumeister\TecDocClient\Generated\MainArticlesRecordType $array)
+    public function addToMainArticle(\Myrzan\TecDocClient\Generated\MainArticlesRecordType $array)
     {
         $this->mainArticle[] = $array;
         return $this;
@@ -620,7 +620,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as mainArticle
      *
-     * @return \Baumeister\TecDocClient\Generated\MainArticlesRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\MainArticlesRecordType[]
      */
     public function getMainArticle()
     {
@@ -630,7 +630,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new mainArticle
      *
-     * @param \Baumeister\TecDocClient\Generated\MainArticlesRecordType[] $mainArticle
+     * @param \Myrzan\TecDocClient\Generated\MainArticlesRecordType[] $mainArticle
      * @return self
      */
     public function setMainArticle(array $mainArticle)
@@ -643,9 +643,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticlePricesNormalAustauschRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticlePricesNormalAustauschRecordType $array
      */
-    public function addToNormalAustauschPrice(\Baumeister\TecDocClient\Generated\ArticlePricesNormalAustauschRecordType $array)
+    public function addToNormalAustauschPrice(\Myrzan\TecDocClient\Generated\ArticlePricesNormalAustauschRecordType $array)
     {
         $this->normalAustauschPrice[] = $array;
         return $this;
@@ -676,7 +676,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as normalAustauschPrice
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticlePricesNormalAustauschRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticlePricesNormalAustauschRecordType[]
      */
     public function getNormalAustauschPrice()
     {
@@ -686,7 +686,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new normalAustauschPrice
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticlePricesNormalAustauschRecordType[] $normalAustauschPrice
+     * @param \Myrzan\TecDocClient\Generated\ArticlePricesNormalAustauschRecordType[] $normalAustauschPrice
      * @return self
      */
     public function setNormalAustauschPrice(array $normalAustauschPrice)
@@ -699,9 +699,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleOENumbersRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleOENumbersRecordType $array
      */
-    public function addToOenNumbers(\Baumeister\TecDocClient\Generated\ArticleOENumbersRecordType $array)
+    public function addToOenNumbers(\Myrzan\TecDocClient\Generated\ArticleOENumbersRecordType $array)
     {
         $this->oenNumbers[] = $array;
         return $this;
@@ -732,7 +732,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as oenNumbers
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleOENumbersRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleOENumbersRecordType[]
      */
     public function getOenNumbers()
     {
@@ -742,7 +742,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new oenNumbers
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleOENumbersRecordType[] $oenNumbers
+     * @param \Myrzan\TecDocClient\Generated\ArticleOENumbersRecordType[] $oenNumbers
      * @return self
      */
     public function setOenNumbers(array $oenNumbers)
@@ -755,9 +755,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ReplacedByNumbersRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ReplacedByNumbersRecordType $array
      */
-    public function addToReplacedByNumber(\Baumeister\TecDocClient\Generated\ReplacedByNumbersRecordType $array)
+    public function addToReplacedByNumber(\Myrzan\TecDocClient\Generated\ReplacedByNumbersRecordType $array)
     {
         $this->replacedByNumber[] = $array;
         return $this;
@@ -788,7 +788,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as replacedByNumber
      *
-     * @return \Baumeister\TecDocClient\Generated\ReplacedByNumbersRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ReplacedByNumbersRecordType[]
      */
     public function getReplacedByNumber()
     {
@@ -798,7 +798,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new replacedByNumber
      *
-     * @param \Baumeister\TecDocClient\Generated\ReplacedByNumbersRecordType[] $replacedByNumber
+     * @param \Myrzan\TecDocClient\Generated\ReplacedByNumbersRecordType[] $replacedByNumber
      * @return self
      */
     public function setReplacedByNumber(array $replacedByNumber)
@@ -811,9 +811,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ReplacedNumbersRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ReplacedNumbersRecordType $array
      */
-    public function addToReplacedNumber(\Baumeister\TecDocClient\Generated\ReplacedNumbersRecordType $array)
+    public function addToReplacedNumber(\Myrzan\TecDocClient\Generated\ReplacedNumbersRecordType $array)
     {
         $this->replacedNumber[] = $array;
         return $this;
@@ -844,7 +844,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as replacedNumber
      *
-     * @return \Baumeister\TecDocClient\Generated\ReplacedNumbersRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ReplacedNumbersRecordType[]
      */
     public function getReplacedNumber()
     {
@@ -854,7 +854,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new replacedNumber
      *
-     * @param \Baumeister\TecDocClient\Generated\ReplacedNumbersRecordType[] $replacedNumber
+     * @param \Myrzan\TecDocClient\Generated\ReplacedNumbersRecordType[] $replacedNumber
      * @return self
      */
     public function setReplacedNumber(array $replacedNumber)
@@ -867,9 +867,9 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\UsageNumbers2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\UsageNumbers2RecordType $array
      */
-    public function addToUsageNumbers2(\Baumeister\TecDocClient\Generated\UsageNumbers2RecordType $array)
+    public function addToUsageNumbers2(\Myrzan\TecDocClient\Generated\UsageNumbers2RecordType $array)
     {
         $this->usageNumbers2[] = $array;
         return $this;
@@ -900,7 +900,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Gets as usageNumbers2
      *
-     * @return \Baumeister\TecDocClient\Generated\UsageNumbers2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\UsageNumbers2RecordType[]
      */
     public function getUsageNumbers2()
     {
@@ -910,7 +910,7 @@ class ArticlesByIds7RecordType extends ArticlesByIds7RecordSrcType
     /**
      * Sets a new usageNumbers2
      *
-     * @param \Baumeister\TecDocClient\Generated\UsageNumbers2RecordType[] $usageNumbers2
+     * @param \Myrzan\TecDocClient\Generated\UsageNumbers2RecordType[] $usageNumbers2
      * @return self
      */
     public function setUsageNumbers2(array $usageNumbers2)

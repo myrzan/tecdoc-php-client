@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleAccessoryList4ResponseType
@@ -12,7 +12,7 @@ class ArticleAccessoryList4ResponseType extends ArticleAccessoryList4ResponseSrc
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleAccessoryList4RecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\ArticleAccessoryList4RecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class ArticleAccessoryList4ResponseType extends ArticleAccessoryList4ResponseSrc
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleAccessoryList4RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleAccessoryList4RecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\ArticleAccessoryList4RecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\ArticleAccessoryList4RecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class ArticleAccessoryList4ResponseType extends ArticleAccessoryList4ResponseSrc
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleAccessoryList4RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleAccessoryList4RecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class ArticleAccessoryList4ResponseType extends ArticleAccessoryList4ResponseSrc
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleAccessoryList4RecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\ArticleAccessoryList4RecordType[] $data
      * @return self
      */
     public function setData(array $data)

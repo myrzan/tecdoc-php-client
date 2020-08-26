@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleLinkageRecordType
@@ -37,14 +37,14 @@ class ArticleLinkageRecordType
     private $genericArticleDescription = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CriteriaRecordType[] $linkageCriteria
+     * @var \Myrzan\TecDocClient\Generated\CriteriaRecordType[] $linkageCriteria
      */
     private $linkageCriteria = [
         
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\LinkageTextRecordType[] $linkageText
+     * @var \Myrzan\TecDocClient\Generated\LinkageTextRecordType[] $linkageText
      */
     private $linkageText = [
         
@@ -164,9 +164,9 @@ class ArticleLinkageRecordType
      * Adds as linkageCriteria
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CriteriaRecordType $linkageCriteria
+     * @param \Myrzan\TecDocClient\Generated\CriteriaRecordType $linkageCriteria
      */
-    public function addToLinkageCriteria(\Baumeister\TecDocClient\Generated\CriteriaRecordType $linkageCriteria)
+    public function addToLinkageCriteria(\Myrzan\TecDocClient\Generated\CriteriaRecordType $linkageCriteria)
     {
         $this->linkageCriteria[] = $linkageCriteria;
         return $this;
@@ -197,7 +197,7 @@ class ArticleLinkageRecordType
     /**
      * Gets as linkageCriteria
      *
-     * @return \Baumeister\TecDocClient\Generated\CriteriaRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\CriteriaRecordType[]
      */
     public function getLinkageCriteria()
     {
@@ -207,7 +207,7 @@ class ArticleLinkageRecordType
     /**
      * Sets a new linkageCriteria
      *
-     * @param \Baumeister\TecDocClient\Generated\CriteriaRecordType[] $linkageCriteria
+     * @param \Myrzan\TecDocClient\Generated\CriteriaRecordType[] $linkageCriteria
      * @return self
      */
     public function setLinkageCriteria(array $linkageCriteria)
@@ -220,9 +220,9 @@ class ArticleLinkageRecordType
      * Adds as linkageText
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\LinkageTextRecordType $linkageText
+     * @param \Myrzan\TecDocClient\Generated\LinkageTextRecordType $linkageText
      */
-    public function addToLinkageText(\Baumeister\TecDocClient\Generated\LinkageTextRecordType $linkageText)
+    public function addToLinkageText(\Myrzan\TecDocClient\Generated\LinkageTextRecordType $linkageText)
     {
         $this->linkageText[] = $linkageText;
         return $this;
@@ -253,7 +253,7 @@ class ArticleLinkageRecordType
     /**
      * Gets as linkageText
      *
-     * @return \Baumeister\TecDocClient\Generated\LinkageTextRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\LinkageTextRecordType[]
      */
     public function getLinkageText()
     {
@@ -263,7 +263,7 @@ class ArticleLinkageRecordType
     /**
      * Sets a new linkageText
      *
-     * @param \Baumeister\TecDocClient\Generated\LinkageTextRecordType[] $linkageText
+     * @param \Myrzan\TecDocClient\Generated\LinkageTextRecordType[] $linkageText
      * @return self
      */
     public function setLinkageText(array $linkageText)

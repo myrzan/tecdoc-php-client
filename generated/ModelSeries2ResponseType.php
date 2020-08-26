@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ModelSeries2ResponseType
@@ -12,7 +12,7 @@ class ModelSeries2ResponseType extends ModelSeries2ResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ModelSeries2RecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\ModelSeries2RecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class ModelSeries2ResponseType extends ModelSeries2ResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ModelSeries2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ModelSeries2RecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\ModelSeries2RecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\ModelSeries2RecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class ModelSeries2ResponseType extends ModelSeries2ResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\ModelSeries2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ModelSeries2RecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class ModelSeries2ResponseType extends ModelSeries2ResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\ModelSeries2RecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\ModelSeries2RecordType[] $data
      * @return self
      */
     public function setData(array $data)

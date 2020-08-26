@@ -1,4 +1,4 @@
-# TecDoc Client PHP
+# TecDoc API PHP client
 A [TecDoc Webservice API](http://webservice.tecalliance.services) client written in PHP.
 
 The DTO classes are generated with [xsd2php](https://github.com/goetas-webservices/xsd2php) using the 
@@ -8,15 +8,15 @@ This project is licensed under the terms of the GNU Lesser General Public Licens
 
 ## Install
 ```shell script
-composer require sbaumeister/tecdoc-client-php
+composer require myrzan/tecdoc-php-client
 ```
 
 ## Usage
 ```php
 <?php
 
-use Baumeister\TecDocClient\Client;
-use Baumeister\TecDocClient\Generated\GetAmBrands;
+use Myrzan\TecDocClient\Client;
+use Myrzan\TecDocClient\Generated\GetAmBrands;
 
 $client = new Client('API_KEY', 'PROVIDER_ID');
 $params = (new GetAmBrands())

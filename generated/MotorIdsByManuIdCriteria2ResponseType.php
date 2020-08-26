@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing MotorIdsByManuIdCriteria2ResponseType
@@ -12,7 +12,7 @@ class MotorIdsByManuIdCriteria2ResponseType extends MotorIdsByManuIdCriteria2Res
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MotorIdsByManuIdCriteria2RecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\MotorIdsByManuIdCriteria2RecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class MotorIdsByManuIdCriteria2ResponseType extends MotorIdsByManuIdCriteria2Res
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\MotorIdsByManuIdCriteria2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\MotorIdsByManuIdCriteria2RecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\MotorIdsByManuIdCriteria2RecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\MotorIdsByManuIdCriteria2RecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class MotorIdsByManuIdCriteria2ResponseType extends MotorIdsByManuIdCriteria2Res
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\MotorIdsByManuIdCriteria2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\MotorIdsByManuIdCriteria2RecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class MotorIdsByManuIdCriteria2ResponseType extends MotorIdsByManuIdCriteria2Res
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\MotorIdsByManuIdCriteria2RecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\MotorIdsByManuIdCriteria2RecordType[] $data
      * @return self
      */
     public function setData(array $data)

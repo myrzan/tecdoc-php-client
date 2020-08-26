@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleDirectSearchAllNumbersWithStateResponseType
@@ -12,7 +12,7 @@ class ArticleDirectSearchAllNumbersWithStateResponseType extends ArticleDirectSe
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleDirectSearchAllNumbersWithStateRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\ArticleDirectSearchAllNumbersWithStateRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class ArticleDirectSearchAllNumbersWithStateResponseType extends ArticleDirectSe
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleDirectSearchAllNumbersWithStateRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleDirectSearchAllNumbersWithStateRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\ArticleDirectSearchAllNumbersWithStateRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\ArticleDirectSearchAllNumbersWithStateRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class ArticleDirectSearchAllNumbersWithStateResponseType extends ArticleDirectSe
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleDirectSearchAllNumbersWithStateRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleDirectSearchAllNumbersWithStateRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class ArticleDirectSearchAllNumbersWithStateResponseType extends ArticleDirectSe
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleDirectSearchAllNumbersWithStateRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\ArticleDirectSearchAllNumbersWithStateRecordType[] $data
      * @return self
      */
     public function setData(array $data)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ChildNodesAllLinkingTarget2ResponseType
@@ -12,7 +12,7 @@ class ChildNodesAllLinkingTarget2ResponseType extends ChildNodesAllLinkingTarget
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ChildNodesAllLinkingTarget2RecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\ChildNodesAllLinkingTarget2RecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class ChildNodesAllLinkingTarget2ResponseType extends ChildNodesAllLinkingTarget
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ChildNodesAllLinkingTarget2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ChildNodesAllLinkingTarget2RecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\ChildNodesAllLinkingTarget2RecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\ChildNodesAllLinkingTarget2RecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class ChildNodesAllLinkingTarget2ResponseType extends ChildNodesAllLinkingTarget
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\ChildNodesAllLinkingTarget2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ChildNodesAllLinkingTarget2RecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class ChildNodesAllLinkingTarget2ResponseType extends ChildNodesAllLinkingTarget
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\ChildNodesAllLinkingTarget2RecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\ChildNodesAllLinkingTarget2RecordType[] $data
      * @return self
      */
     public function setData(array $data)

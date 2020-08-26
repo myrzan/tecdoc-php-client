@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing AssignedArticlesByIds7RequestType
@@ -17,7 +17,7 @@ class AssignedArticlesByIds7RequestType extends AssignedArticlesByIds7RequestSrc
     private $articleCountry = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleIdPairType[] $articleIdPairs
+     * @var \Myrzan\TecDocClient\Generated\ArticleIdPairType[] $articleIdPairs
      */
     private $articleIdPairs = null;
 
@@ -159,9 +159,9 @@ class AssignedArticlesByIds7RequestType extends AssignedArticlesByIds7RequestSrc
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleIdPairType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleIdPairType $array
      */
-    public function addToArticleIdPairs(\Baumeister\TecDocClient\Generated\ArticleIdPairType $array)
+    public function addToArticleIdPairs(\Myrzan\TecDocClient\Generated\ArticleIdPairType $array)
     {
         $this->articleIdPairs[] = $array;
         return $this;
@@ -192,7 +192,7 @@ class AssignedArticlesByIds7RequestType extends AssignedArticlesByIds7RequestSrc
     /**
      * Gets as articleIdPairs
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleIdPairType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleIdPairType[]
      */
     public function getArticleIdPairs()
     {
@@ -202,7 +202,7 @@ class AssignedArticlesByIds7RequestType extends AssignedArticlesByIds7RequestSrc
     /**
      * Sets a new articleIdPairs
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleIdPairType[] $articleIdPairs
+     * @param \Myrzan\TecDocClient\Generated\ArticleIdPairType[] $articleIdPairs
      * @return self
      */
     public function setArticleIdPairs(array $articleIdPairs)

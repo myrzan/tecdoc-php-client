@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing MotorByIds3RecordType
@@ -12,7 +12,7 @@ class MotorByIds3RecordType extends MotorByIds3RecordSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MotorDetails2RecordType $motorDetails2
+     * @var \Myrzan\TecDocClient\Generated\MotorDetails2RecordType $motorDetails2
      */
     private $motorDetails2 = null;
 
@@ -24,7 +24,7 @@ class MotorByIds3RecordType extends MotorByIds3RecordSrcType
     /**
      * Gets as motorDetails2
      *
-     * @return \Baumeister\TecDocClient\Generated\MotorDetails2RecordType
+     * @return \Myrzan\TecDocClient\Generated\MotorDetails2RecordType
      */
     public function getMotorDetails2()
     {
@@ -34,10 +34,10 @@ class MotorByIds3RecordType extends MotorByIds3RecordSrcType
     /**
      * Sets a new motorDetails2
      *
-     * @param \Baumeister\TecDocClient\Generated\MotorDetails2RecordType $motorDetails2
+     * @param \Myrzan\TecDocClient\Generated\MotorDetails2RecordType $motorDetails2
      * @return self
      */
-    public function setMotorDetails2(\Baumeister\TecDocClient\Generated\MotorDetails2RecordType $motorDetails2)
+    public function setMotorDetails2(\Myrzan\TecDocClient\Generated\MotorDetails2RecordType $motorDetails2)
     {
         $this->motorDetails2 = $motorDetails2;
         return $this;

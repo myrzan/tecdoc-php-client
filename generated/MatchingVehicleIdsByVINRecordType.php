@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing MatchingVehicleIdsByVINRecordType
@@ -37,14 +37,14 @@ class MatchingVehicleIdsByVINRecordType extends MatchingVehicleIdsByVINRecordSrc
     private $carName = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\CriteriaRecordType[] $linkageCriteria
+     * @var \Myrzan\TecDocClient\Generated\CriteriaRecordType[] $linkageCriteria
      */
     private $linkageCriteria = [
         
     ];
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\RMIQualifierType[] $rmiQualifiers
+     * @var \Myrzan\TecDocClient\Generated\RMIQualifierType[] $rmiQualifiers
      */
     private $rmiQualifiers = [
         
@@ -164,9 +164,9 @@ class MatchingVehicleIdsByVINRecordType extends MatchingVehicleIdsByVINRecordSrc
      * Adds as linkageCriteria
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\CriteriaRecordType $linkageCriteria
+     * @param \Myrzan\TecDocClient\Generated\CriteriaRecordType $linkageCriteria
      */
-    public function addToLinkageCriteria(\Baumeister\TecDocClient\Generated\CriteriaRecordType $linkageCriteria)
+    public function addToLinkageCriteria(\Myrzan\TecDocClient\Generated\CriteriaRecordType $linkageCriteria)
     {
         $this->linkageCriteria[] = $linkageCriteria;
         return $this;
@@ -197,7 +197,7 @@ class MatchingVehicleIdsByVINRecordType extends MatchingVehicleIdsByVINRecordSrc
     /**
      * Gets as linkageCriteria
      *
-     * @return \Baumeister\TecDocClient\Generated\CriteriaRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\CriteriaRecordType[]
      */
     public function getLinkageCriteria()
     {
@@ -207,7 +207,7 @@ class MatchingVehicleIdsByVINRecordType extends MatchingVehicleIdsByVINRecordSrc
     /**
      * Sets a new linkageCriteria
      *
-     * @param \Baumeister\TecDocClient\Generated\CriteriaRecordType[] $linkageCriteria
+     * @param \Myrzan\TecDocClient\Generated\CriteriaRecordType[] $linkageCriteria
      * @return self
      */
     public function setLinkageCriteria(array $linkageCriteria)
@@ -220,9 +220,9 @@ class MatchingVehicleIdsByVINRecordType extends MatchingVehicleIdsByVINRecordSrc
      * Adds as rmiQualifiers
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\RMIQualifierType $rmiQualifiers
+     * @param \Myrzan\TecDocClient\Generated\RMIQualifierType $rmiQualifiers
      */
-    public function addToRmiQualifiers(\Baumeister\TecDocClient\Generated\RMIQualifierType $rmiQualifiers)
+    public function addToRmiQualifiers(\Myrzan\TecDocClient\Generated\RMIQualifierType $rmiQualifiers)
     {
         $this->rmiQualifiers[] = $rmiQualifiers;
         return $this;
@@ -253,7 +253,7 @@ class MatchingVehicleIdsByVINRecordType extends MatchingVehicleIdsByVINRecordSrc
     /**
      * Gets as rmiQualifiers
      *
-     * @return \Baumeister\TecDocClient\Generated\RMIQualifierType[]
+     * @return \Myrzan\TecDocClient\Generated\RMIQualifierType[]
      */
     public function getRmiQualifiers()
     {
@@ -263,7 +263,7 @@ class MatchingVehicleIdsByVINRecordType extends MatchingVehicleIdsByVINRecordSrc
     /**
      * Sets a new rmiQualifiers
      *
-     * @param \Baumeister\TecDocClient\Generated\RMIQualifierType[] $rmiQualifiers
+     * @param \Myrzan\TecDocClient\Generated\RMIQualifierType[] $rmiQualifiers
      * @return self
      */
     public function setRmiQualifiers(array $rmiQualifiers)

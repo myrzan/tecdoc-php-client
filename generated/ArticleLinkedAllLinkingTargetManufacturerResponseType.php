@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleLinkedAllLinkingTargetManufacturerResponseType
@@ -12,7 +12,7 @@ class ArticleLinkedAllLinkingTargetManufacturerResponseType extends ArticleLinke
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturerRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturerRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class ArticleLinkedAllLinkingTargetManufacturerResponseType extends ArticleLinke
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturerRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturerRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturerRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturerRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class ArticleLinkedAllLinkingTargetManufacturerResponseType extends ArticleLinke
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturerRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturerRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class ArticleLinkedAllLinkingTargetManufacturerResponseType extends ArticleLinke
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturerRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkedAllLinkingTargetManufacturerRecordType[] $data
      * @return self
      */
     public function setData(array $data)

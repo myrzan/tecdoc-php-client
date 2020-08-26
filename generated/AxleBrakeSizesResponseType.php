@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing AxleBrakeSizesResponseType
@@ -12,7 +12,7 @@ class AxleBrakeSizesResponseType extends AxleBrakeSizesResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AxleBrakeSizesRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\AxleBrakeSizesRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class AxleBrakeSizesResponseType extends AxleBrakeSizesResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AxleBrakeSizesRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\AxleBrakeSizesRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\AxleBrakeSizesRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\AxleBrakeSizesRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class AxleBrakeSizesResponseType extends AxleBrakeSizesResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\AxleBrakeSizesRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\AxleBrakeSizesRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class AxleBrakeSizesResponseType extends AxleBrakeSizesResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\AxleBrakeSizesRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\AxleBrakeSizesRecordType[] $data
      * @return self
      */
     public function setData(array $data)

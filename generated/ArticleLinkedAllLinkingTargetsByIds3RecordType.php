@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleLinkedAllLinkingTargetsByIds3RecordType
@@ -17,27 +17,27 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     private $articleLinkId = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ImmediateAttributsLinkedElementsRecordType[] $linkedArticleImmediateAttributs
+     * @var \Myrzan\TecDocClient\Generated\ImmediateAttributsLinkedElementsRecordType[] $linkedArticleImmediateAttributs
      */
     private $linkedArticleImmediateAttributs = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\AxleByIdRecordType[] $linkedAxles
+     * @var \Myrzan\TecDocClient\Generated\AxleByIdRecordType[] $linkedAxles
      */
     private $linkedAxles = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\MarkByIdRecordType[] $linkedMarks
+     * @var \Myrzan\TecDocClient\Generated\MarkByIdRecordType[] $linkedMarks
      */
     private $linkedMarks = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleLinkedMotorsByIdRecordType[] $linkedMotors
+     * @var \Myrzan\TecDocClient\Generated\ArticleLinkedMotorsByIdRecordType[] $linkedMotors
      */
     private $linkedMotors = null;
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleLinkedVehiclesById2RecordType[] $linkedVehicles
+     * @var \Myrzan\TecDocClient\Generated\ArticleLinkedVehiclesById2RecordType[] $linkedVehicles
      */
     private $linkedVehicles = null;
 
@@ -77,9 +77,9 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ImmediateAttributsLinkedElementsRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ImmediateAttributsLinkedElementsRecordType $array
      */
-    public function addToLinkedArticleImmediateAttributs(\Baumeister\TecDocClient\Generated\ImmediateAttributsLinkedElementsRecordType $array)
+    public function addToLinkedArticleImmediateAttributs(\Myrzan\TecDocClient\Generated\ImmediateAttributsLinkedElementsRecordType $array)
     {
         $this->linkedArticleImmediateAttributs[] = $array;
         return $this;
@@ -110,7 +110,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     /**
      * Gets as linkedArticleImmediateAttributs
      *
-     * @return \Baumeister\TecDocClient\Generated\ImmediateAttributsLinkedElementsRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ImmediateAttributsLinkedElementsRecordType[]
      */
     public function getLinkedArticleImmediateAttributs()
     {
@@ -120,7 +120,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     /**
      * Sets a new linkedArticleImmediateAttributs
      *
-     * @param \Baumeister\TecDocClient\Generated\ImmediateAttributsLinkedElementsRecordType[] $linkedArticleImmediateAttributs
+     * @param \Myrzan\TecDocClient\Generated\ImmediateAttributsLinkedElementsRecordType[] $linkedArticleImmediateAttributs
      * @return self
      */
     public function setLinkedArticleImmediateAttributs(array $linkedArticleImmediateAttributs)
@@ -133,9 +133,9 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\AxleByIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\AxleByIdRecordType $array
      */
-    public function addToLinkedAxles(\Baumeister\TecDocClient\Generated\AxleByIdRecordType $array)
+    public function addToLinkedAxles(\Myrzan\TecDocClient\Generated\AxleByIdRecordType $array)
     {
         $this->linkedAxles[] = $array;
         return $this;
@@ -166,7 +166,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     /**
      * Gets as linkedAxles
      *
-     * @return \Baumeister\TecDocClient\Generated\AxleByIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\AxleByIdRecordType[]
      */
     public function getLinkedAxles()
     {
@@ -176,7 +176,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     /**
      * Sets a new linkedAxles
      *
-     * @param \Baumeister\TecDocClient\Generated\AxleByIdRecordType[] $linkedAxles
+     * @param \Myrzan\TecDocClient\Generated\AxleByIdRecordType[] $linkedAxles
      * @return self
      */
     public function setLinkedAxles(array $linkedAxles)
@@ -189,9 +189,9 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\MarkByIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\MarkByIdRecordType $array
      */
-    public function addToLinkedMarks(\Baumeister\TecDocClient\Generated\MarkByIdRecordType $array)
+    public function addToLinkedMarks(\Myrzan\TecDocClient\Generated\MarkByIdRecordType $array)
     {
         $this->linkedMarks[] = $array;
         return $this;
@@ -222,7 +222,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     /**
      * Gets as linkedMarks
      *
-     * @return \Baumeister\TecDocClient\Generated\MarkByIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\MarkByIdRecordType[]
      */
     public function getLinkedMarks()
     {
@@ -232,7 +232,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     /**
      * Sets a new linkedMarks
      *
-     * @param \Baumeister\TecDocClient\Generated\MarkByIdRecordType[] $linkedMarks
+     * @param \Myrzan\TecDocClient\Generated\MarkByIdRecordType[] $linkedMarks
      * @return self
      */
     public function setLinkedMarks(array $linkedMarks)
@@ -245,9 +245,9 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkedMotorsByIdRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkedMotorsByIdRecordType $array
      */
-    public function addToLinkedMotors(\Baumeister\TecDocClient\Generated\ArticleLinkedMotorsByIdRecordType $array)
+    public function addToLinkedMotors(\Myrzan\TecDocClient\Generated\ArticleLinkedMotorsByIdRecordType $array)
     {
         $this->linkedMotors[] = $array;
         return $this;
@@ -278,7 +278,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     /**
      * Gets as linkedMotors
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleLinkedMotorsByIdRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleLinkedMotorsByIdRecordType[]
      */
     public function getLinkedMotors()
     {
@@ -288,7 +288,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     /**
      * Sets a new linkedMotors
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkedMotorsByIdRecordType[] $linkedMotors
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkedMotorsByIdRecordType[] $linkedMotors
      * @return self
      */
     public function setLinkedMotors(array $linkedMotors)
@@ -301,9 +301,9 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkedVehiclesById2RecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkedVehiclesById2RecordType $array
      */
-    public function addToLinkedVehicles(\Baumeister\TecDocClient\Generated\ArticleLinkedVehiclesById2RecordType $array)
+    public function addToLinkedVehicles(\Myrzan\TecDocClient\Generated\ArticleLinkedVehiclesById2RecordType $array)
     {
         $this->linkedVehicles[] = $array;
         return $this;
@@ -334,7 +334,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     /**
      * Gets as linkedVehicles
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleLinkedVehiclesById2RecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleLinkedVehiclesById2RecordType[]
      */
     public function getLinkedVehicles()
     {
@@ -344,7 +344,7 @@ class ArticleLinkedAllLinkingTargetsByIds3RecordType extends ArticleLinkedAllLin
     /**
      * Sets a new linkedVehicles
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleLinkedVehiclesById2RecordType[] $linkedVehicles
+     * @param \Myrzan\TecDocClient\Generated\ArticleLinkedVehiclesById2RecordType[] $linkedVehicles
      * @return self
      */
     public function setLinkedVehicles(array $linkedVehicles)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing ArticleIdsWithStateResponseType
@@ -12,7 +12,7 @@ class ArticleIdsWithStateResponseType extends ArticleIdsWithStateResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\ArticleIdsWithStateRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\ArticleIdsWithStateRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class ArticleIdsWithStateResponseType extends ArticleIdsWithStateResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\ArticleIdsWithStateRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\ArticleIdsWithStateRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\ArticleIdsWithStateRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\ArticleIdsWithStateRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class ArticleIdsWithStateResponseType extends ArticleIdsWithStateResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\ArticleIdsWithStateRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\ArticleIdsWithStateRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class ArticleIdsWithStateResponseType extends ArticleIdsWithStateResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\ArticleIdsWithStateRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\ArticleIdsWithStateRecordType[] $data
      * @return self
      */
     public function setData(array $data)

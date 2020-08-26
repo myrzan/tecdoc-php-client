@@ -1,6 +1,6 @@
 <?php
 
-namespace Baumeister\TecDocClient\Generated;
+namespace Myrzan\TecDocClient\Generated;
 
 /**
  * Class representing VehicleIdsByMarkResponseType
@@ -12,7 +12,7 @@ class VehicleIdsByMarkResponseType extends VehicleIdsByMarkResponseSrcType
 {
 
     /**
-     * @var \Baumeister\TecDocClient\Generated\VehicleIdsByMarkRecordType[] $data
+     * @var \Myrzan\TecDocClient\Generated\VehicleIdsByMarkRecordType[] $data
      */
     private $data = null;
 
@@ -30,9 +30,9 @@ class VehicleIdsByMarkResponseType extends VehicleIdsByMarkResponseSrcType
      * Adds as array
      *
      * @return self
-     * @param \Baumeister\TecDocClient\Generated\VehicleIdsByMarkRecordType $array
+     * @param \Myrzan\TecDocClient\Generated\VehicleIdsByMarkRecordType $array
      */
-    public function addToData(\Baumeister\TecDocClient\Generated\VehicleIdsByMarkRecordType $array)
+    public function addToData(\Myrzan\TecDocClient\Generated\VehicleIdsByMarkRecordType $array)
     {
         $this->data[] = $array;
         return $this;
@@ -63,7 +63,7 @@ class VehicleIdsByMarkResponseType extends VehicleIdsByMarkResponseSrcType
     /**
      * Gets as data
      *
-     * @return \Baumeister\TecDocClient\Generated\VehicleIdsByMarkRecordType[]
+     * @return \Myrzan\TecDocClient\Generated\VehicleIdsByMarkRecordType[]
      */
     public function getData()
     {
@@ -73,7 +73,7 @@ class VehicleIdsByMarkResponseType extends VehicleIdsByMarkResponseSrcType
     /**
      * Sets a new data
      *
-     * @param \Baumeister\TecDocClient\Generated\VehicleIdsByMarkRecordType[] $data
+     * @param \Myrzan\TecDocClient\Generated\VehicleIdsByMarkRecordType[] $data
      * @return self
      */
     public function setData(array $data)
