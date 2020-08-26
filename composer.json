@@ -1,12 +1,16 @@
 {
-    "name": "sbaumeister/tecdoc-client-php",
-    "description": "A TecDoc Webservice API client",
+    "name": "myrzan/tecdoc-php-client",
+    "description": "TecDoc API PHP client",
     "license": ["LGPL-3.0-only"],
     "type": "library",
     "authors": [
         {
             "name": "Stephan Baumeister",
             "email": "stephan@baumeister.name"
+        },
+        {
+            "name": "Daulet Myrzan",
+            "email": "dauletmyrzan@gmail.com"
         }
     ],
     "scripts": {
@@ -24,13 +28,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Baumeister\\TecDocClient\\": "src/",
-            "Baumeister\\TecDocClient\\Generated\\": "generated/"
+            "Myrzan\\TecDocClient\\": "src/",
+            "Myrzan\\TecDocClient\\Generated\\": "generated/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Baumeister\\TecDocClient\\Tests\\": "tests/"
+            "Myrzan\\TecDocClient\\Tests\\": "tests/"
         }
     }
 }
