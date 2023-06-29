@@ -12,11 +12,12 @@ composer require myrzan/tecdoc-php-client
 ```
 
 ## Usage
+
 ```php
 <?php
 
 use Myrzan\TecDocClient\Client;
-use Myrzan\TecDocClient\Generated\GetAmBrands;
+use Myrzan\TecDocClient\Generated\Request\GetAmBrands;
 
 $client = new Client('API_KEY', 'PROVIDER_ID');
 $params = (new GetAmBrands())

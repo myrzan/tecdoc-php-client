@@ -1,22 +1,25 @@
 <?php
+
 namespace Myrzan\TecDocClient;
 
-use Myrzan\TecDocClient\Generated\GetAmBrands;
-use Myrzan\TecDocClient\Generated\GetAmBrandsResponse;
-use Myrzan\TecDocClient\Generated\GetArticleDirectSearchAllNumbersWithState;
-use Myrzan\TecDocClient\Generated\GetArticleDirectSearchAllNumbersWithStateResponse;
-use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTarget4;
-use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTarget4Response;
-use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTargetsByIds3;
-use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTargetsByIds3Response;
-use Myrzan\TecDocClient\Generated\GetArticles;
-use Myrzan\TecDocClient\Generated\GetArticlesResponse;
-use Myrzan\TecDocClient\Generated\GetLanguages;
-use Myrzan\TecDocClient\Generated\GetLanguagesResponse;
-use Myrzan\TecDocClient\Generated\GetVehicleByIds3;
-use Myrzan\TecDocClient\Generated\GetVehicleByIds3Response;
 use GuzzleHttp\Client as GuzzleClient;
 use JsonMapper;
+use Myrzan\TecDocClient\Generated\Request\GetArticleLinkedAllLinkingTarget4;
+use Myrzan\TecDocClient\Generated\Response\ArticleLinkedAllLinkingTarget4Response;
+use Myrzan\TecDocClient\Generated\Request\GetArticleLinkedAllLinkingTargetsByIds3;
+use Myrzan\TecDocClient\Generated\Response\ArticleLinkedAllLinkingTargetsByIds3Response;
+use Myrzan\TecDocClient\Generated\Request\GetAmBrands;
+use Myrzan\TecDocClient\Generated\Request\GetArticleDirectSearchAllNumbersWithState;
+use Myrzan\TecDocClient\Generated\Request\GetArticles;
+use Myrzan\TecDocClient\Generated\Request\GetBrands;
+use Myrzan\TecDocClient\Generated\Request\GetLanguages;
+use Myrzan\TecDocClient\Generated\Request\GetVehicleByIds3;
+use Myrzan\TecDocClient\Generated\Response\AmBrandsResponse;
+use Myrzan\TecDocClient\Generated\Response\ArticleDirectSearchAllNumbersWithStateResponse;
+use Myrzan\TecDocClient\Generated\Response\ArticlesResponse;
+use Myrzan\TecDocClient\Generated\Response\BrandsResponse;
+use Myrzan\TecDocClient\Generated\Response\LanguagesResponse;
+use Myrzan\TecDocClient\Generated\Response\VehicleByIds3Response;
 use ReflectionClass;
 use ReflectionObject;
 use RuntimeException;
@@ -40,50 +43,61 @@ class Client
      * Class constructor.
      *
      * @param string $apiKey
-     * @param int    $providerId
+     * @param int $providerId
      */
     public function __construct(string $apiKey, int $providerId)
     {
         $this->providerId = $providerId;
-        $this->client     = new GuzzleClient();
-        $this->url        = self::TECDOC_JSON_ENDPOINT . $apiKey;
+        $this->client = new GuzzleClient();
+        $this->url = self::TECDOC_JSON_ENDPOINT . $apiKey;
         $this->jsonMapper = new JsonMapper();
-        $this->apiKey     = $apiKey;
+        $this->apiKey = $apiKey;
     }
 
-    public function getLanguages(GetLanguages $paramsObject): GetLanguagesResponse
+    public function getLanguages(GetLanguages $paramsObject): LanguagesResponse
     {
         $json = $this->call('getLanguages', $paramsObject);
-        return $this->mapJsonToObject($json, new GetLanguagesResponse());
+        return $this->mapJsonToObject($json, new LanguagesResponse());
     }
 
-    public function getAmBrands(GetAmBrands $paramsObject): GetAmBrandsResponse
+    public function getBrands(GetBrands $req): BrandsResponse
+    {
+        $json = $this->call('getBrands', $req);
+        return $this->mapJsonToObject($json, new BrandsResponse());
+    }
+
+    /**
+     * @param GetAmBrands $paramsObject
+     * @return AmBrandsResponse
+     * @deprecated
+     */
+    public function getAmBrands(GetAmBrands $paramsObject): AmBrandsResponse
     {
         $json = $this->call('getAmBrands', $paramsObject);
-        return $this->mapJsonToObject($json, new GetAmBrandsResponse());
+        return $this->mapJsonToObject($json, new AmBrandsResponse());
     }
 
-    public function getArticles(GetArticles $paramsObject): GetArticlesResponse
+    public function getArticles(GetArticles $paramsObject): ArticlesResponse
     {
         $json = $this->call('getArticles', $paramsObject);
-        return $this->mapJsonToObject($json, new GetArticlesResponse());
+        return $this->mapJsonToObject($json, new ArticlesResponse());
     }
 
-    public function getVehicleByIds3(GetVehicleByIds3 $paramsObject): GetVehicleByIds3Response
+    public function getVehicleByIds3(GetVehicleByIds3 $paramsObject): VehicleByIds3Response
     {
         Client::addIntermediatePropNamedArray($paramsObject, 'carIds');
         $json = $this->call('getVehicleByIds3', $paramsObject);
-        return $this->mapJsonToObject($json, new GetVehicleByIds3Response());
+        return $this->mapJsonToObject($json, new VehicleByIds3Response());
     }
 
-    public function getArticleLinkedAllLinkingTargetsByIds3(GetArticleLinkedAllLinkingTargetsByIds3 $paramsObject): GetArticleLinkedAllLinkingTargetsByIds3Response
+    public function getArticleLinkedAllLinkingTargetsByIds3(GetArticleLinkedAllLinkingTargetsByIds3 $paramsObject): ArticleLinkedAllLinkingTargetsByIds3Response
     {
         Client::addIntermediatePropNamedArray($paramsObject, 'linkedArticlePairs');
         $json = $this->call('getArticleLinkedAllLinkingTargetsByIds3', $paramsObject);
-        return $this->mapJsonToObject($json, new GetArticleLinkedAllLinkingTargetsByIds3Response());
+        return $this->mapJsonToObject($json, new ArticleLinkedAllLinkingTargetsByIds3Response());
     }
 
-    public function getArticleLinkedAllLinkingTarget4(GetArticleLinkedAllLinkingTarget4 $paramsObject): GetArticleLinkedAllLinkingTarget4Response
+    public function getArticleLinkedAllLinkingTarget4(GetArticleLinkedAllLinkingTarget4 $paramsObject): ArticleLinkedAllLinkingTarget4Response
     {
         $json = $this->call('getArticleLinkedAllLinkingTarget4', $paramsObject);
 
@@ -92,26 +106,26 @@ class Client
             $json->data = [];
         }
 
-        return $this->mapJsonToObject($json, new GetArticleLinkedAllLinkingTarget4Response());
+        return $this->mapJsonToObject($json, new ArticleLinkedAllLinkingTarget4Response());
     }
 
-    public function getArticleDirectSearchAllNumbersWithState(GetArticleDirectSearchAllNumbersWithState $paramsObject): GetArticleDirectSearchAllNumbersWithStateResponse
+    public function getArticleDirectSearchAllNumbersWithState(GetArticleDirectSearchAllNumbersWithState $paramsObject): ArticleDirectSearchAllNumbersWithStateResponse
     {
         $json = $this->call('getArticleDirectSearchAllNumbersWithState', $paramsObject);
 
-        return $this->mapJsonToObject($json, new GetArticleDirectSearchAllNumbersWithStateResponse());
+        return $this->mapJsonToObject($json, new ArticleDirectSearchAllNumbersWithStateResponse());
     }
 
     private function call(string $functionName, $paramsObject)
     {
-        $paramsArray             = self::recursivelyTransformObjectToArray($paramsObject);
+        $paramsArray = self::recursivelyTransformObjectToArray($paramsObject);
         $paramsArray['provider'] = $this->providerId;
-        $jsonBody                = [
+        $jsonBody = [
             $functionName => $paramsArray
         ];
-        $response                = $this->client->request('POST', $this->url, [
+        $response = $this->client->request('POST', $this->url, [
             'verify' => false,
-            'json'   => $jsonBody
+            'json' => $jsonBody
         ]);
 
         if ($response->getStatusCode() == 200) {
@@ -124,7 +138,7 @@ class Client
         throw new RuntimeException("HTTP request failed with code {$response->getStatusCode()}");
     }
 
-    private static function recursivelyRemoveIntermediatePropsNamedArray($obj, $parentObj = null, $propName = null)
+    private static function recursivelyRemoveIntermediatePropsNamedArray($obj, $parentObj = null, $propName = null): void
     {
         foreach ($obj as $prop => $val) {
             if ($prop === 'array' && $parentObj != null && $propName != null) {
@@ -139,15 +153,18 @@ class Client
         }
     }
 
+    /**
+     * @throws \ReflectionException
+     */
     private static function addIntermediatePropNamedArray(object $paramsObject, string $propName): void
     {
-        $reflectionClass    = new ReflectionClass($paramsObject);
+        $reflectionClass = new ReflectionClass($paramsObject);
         $reflectionProperty = $reflectionClass->getParentClass()->getProperty($propName);
 
         $reflectionProperty->setAccessible(true);
 
-        $propValue          = new stdClass();
-        $propValue->array   = $reflectionProperty->getValue($paramsObject);
+        $propValue = new stdClass();
+        $propValue->array = $reflectionProperty->getValue($paramsObject);
 
         $reflectionProperty->setValue($paramsObject, $propValue);
     }
@@ -173,7 +190,7 @@ class Client
                     foreach ($properties as $property) {
                         $property->setAccessible(true);
 
-                        $propName          = $property->getName();
+                        $propName = $property->getName();
                         $result[$propName] = self::recursivelyTransformObjectToArray($property->getValue($object));
                     }
                 } while ($reflection = $reflection->getParentClass());
@@ -205,7 +222,7 @@ class Client
         }
     }
 
-    private function findNestedPropAndSetValue($obj, string $propName, $propValue, $newValue)
+    private function findNestedPropAndSetValue($obj, string $propName, $propValue, $newValue): void
     {
         if (!is_object($obj)) {
             return;

@@ -3,13 +3,13 @@
 namespace Myrzan\TecDocClient\Tests;
 
 use Myrzan\TecDocClient\Client;
-use Myrzan\TecDocClient\Generated\GetAmBrands;
-use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTarget4;
-use Myrzan\TecDocClient\Generated\GetArticleLinkedAllLinkingTargetsByIds3;
-use Myrzan\TecDocClient\Generated\GetArticles;
-use Myrzan\TecDocClient\Generated\GetLanguages;
-use Myrzan\TecDocClient\Generated\GetVehicleByIds3;
-use Myrzan\TecDocClient\Generated\LinkedArticlePairType;
+use Myrzan\TecDocClient\Generated\Request\GetArticleLinkedAllLinkingTarget4;
+use Myrzan\TecDocClient\Generated\Request\GetArticleLinkedAllLinkingTargetsByIds3;
+use Myrzan\TecDocClient\Generated\Record\LinkedArticlePair;
+use Myrzan\TecDocClient\Generated\Request\GetAmBrands;
+use Myrzan\TecDocClient\Generated\Request\GetArticles;
+use Myrzan\TecDocClient\Generated\Request\GetLanguages;
+use Myrzan\TecDocClient\Generated\Request\GetVehicleByIds3;
 use PHPUnit\Framework\TestCase;
 
 class ClientTest extends TestCase
@@ -71,13 +71,13 @@ class ClientTest extends TestCase
             ->setNumberplateType(20)
             ->setImmediateAttributs(true)
             ->setLinkedArticlePairs([
-                (new LinkedArticlePairType())
+                (new LinkedArticlePair())
                     ->setArticleLinkId(6785022)
                     ->setLinkingTargetId(1808),
-                (new LinkedArticlePairType())
+                (new LinkedArticlePair())
                     ->setArticleLinkId(6785053)
                     ->setLinkingTargetId(1809),
-                (new LinkedArticlePairType())
+                (new LinkedArticlePair())
                     ->setArticleLinkId(6784973)
                     ->setLinkingTargetId(1795),
             ]);
